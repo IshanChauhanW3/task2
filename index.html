@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/stylesheet/style.css" />
   </head>
 
   <body>
-    <header class="mainmenu">
-      <div class="s1">
+    <header>
+      <div class="menuoptions">
         <ul class="menuList">
           <li><img src="./assets/images/home.png" /><a>Home</a></li>
           <li><img src=",/assets/images/about.png" /><a>About Us </a></li>
@@ -17,36 +22,29 @@
           <li>
             <img src="./assets/images/faq.png" />
             <lable for="faq">FAQ</lable>
-            <select nmae="faq" id="select">
-              <option value=""></option>
-            </select>
+            <select name="faq" id="select"></select>
           </li>
         </ul>
       </div>
 
-      <div class="s2">
-        <div class="lanS">
+      <div class="languages">
+        <div class="languageSection">
           <img src="./assets/images/flag.png" />
           <lable for="lang">English</lable>
-          <select name="lang" id="name">
-            <option value="hindi"></option>
-          </select>
+          <select name="lang" id="name"></select>
         </div>
 
-        <div class="currS">
+        <div class="currencySection">
           <img src="./assets/images/dollar.png" />
           <lable for="lang">US Dollar</lable>
-          <select name="lang" id="name">
-            <option value="hindi"></option>
-          </select>
+          <select name="lang" id="name"></select>
         </div>
       </div>
-      <div class="s3">
+      <div class="moreMenuSection">
         <div class="moremenu">
           <img src="./assets/images/moremenu.png" />
           <lable for="moremenu">More Menu</lable>
           <select name="moremenu"></select>
-          <option></option>
         </div>
 
         <div class="delivery">
@@ -56,15 +54,13 @@
       </div>
     </header>
 
-    <navbar class="navbar">
-      <logo><img src="./assets/images/logo.png" /></logo>
-      <search class="search">
-        <all>
-          <lable>All</lable>
-          <select>
-            <options></options>
-          </select>
-        </all>
+    <section class="navbar">
+      <div class="logo"><img src="./assets/images/logo.png" /></div>
+      <div class="search">
+        <div class="all">
+          <a class="searchAll">All</a>   
+          <select class="selectAll"></select>       
+        </div>
         <input
           type="text"
           id=""
@@ -73,32 +69,32 @@
           placeholder="Search here..."
         />
         <button><img src="./assets/images/loupe.png" /></button>
-      </search>
-      <options class="options">
+      </div>
+      <div class="options">
         <div>
-          <img src="./assets/images/login.png" />
+          <img src="./assets/images/user.png" />
           <lable>Login</lable>
         </div>
         <div>
-          <img src="./assets/images/register.png" />
+          <img src="./assets/images/pen.png" />
           <lable>Register</lable>
         </div>
         <div>
-          <img src="./assets/images/wishlist.png" />
+          <img src="./assets/images/heart.png" />
           <lable>Wishlist</lable>
         </div>
         <div>
           <img src="./assets/images/compare.png" />
           <lable>Compare</lable>
         </div>
-      </options>
-      <cart>
-        <cartInfo>
+      </div>
+      <div class="cart">
+        <div class="cartInfo">
           <p>0 item(s)- $0.00</p>
-        </cartInfo>
-        <cartButton><img src="./assets/images/cart.png" /></cartButton>
-      </cart>
-    </navbar>
+        </div>
+        <div class="cartButton"><img src="./assets/images/cart.png" /></div>
+      </div>
+    </section>
     <nav>
       <ul class="navoptions">
         <li><img src="./assets/images/more.png" />ALL DEPARTMENTS</li>
@@ -130,7 +126,9 @@
 
     <section class="features">
       <div class="fset">
-        <div class="flogo"><img src="./assets/images/delivery-truck.png" /></div>
+        <div class="flogo">
+          <img src="./assets/images/delivery-truck.png" />
+        </div>
 
         <div>
           <p class="mainf">Free Shipping</p>
@@ -146,7 +144,9 @@
         </div>
       </div>
       <div class="fset">
-        <div class="flogo"><img src="./assets/images/delivery-truck.png" /></div>
+        <div class="flogo">
+          <img src="./assets/images/delivery-truck.png" />
+        </div>
 
         <div>
           <p class="mainf">Secure Shipping</p>
@@ -181,13 +181,23 @@
         </ul>
       </div>
       <div class="catCards">
-        <div><img src="./assets/images/cc2.png" /><a class="card1">FASHION</a></div>
-        <div><img src="./assets/images/cc3.png" /><a class="card2">BAGS</a></div>
         <div>
-          <img src="./assets/images/cc4.png" /><a class="card3">HEALTH & BEAUTY</a>
+          <img src="./assets/images/cc2.png" /><a class="card1">FASHION</a>
         </div>
-        <div><img src="./assets/images/cc5.png" /><a class="card4">FOOTWEAR</a></div>
-        <div><img src="./assets/images/cc1.png" /><a class="card5">HOME DECOR</a></div>
+        <div>
+          <img src="./assets/images/cc3.png" /><a class="card2">BAGS</a>
+        </div>
+        <div>
+          <img src="./assets/images/cc4.png" /><a class="card3"
+            >HEALTH & BEAUTY</a
+          >
+        </div>
+        <div>
+          <img src="./assets/images/cc5.png" /><a class="card4">FOOTWEAR</a>
+        </div>
+        <div>
+          <img src="./assets/images/cc1.png" /><a class="card5">HOME DECOR</a>
+        </div>
       </div>
     </section>
 
@@ -240,7 +250,9 @@
               <img src="./assets/images/buy.png" /><a class="buybutton">Buy</a>
             </div>
             <div class="buybutton">
-              <img src="./assets/images/ques.png" /><a class="buybutton">Question</a>
+              <img src="./assets/images/ques.png" /><a class="buybutton"
+                >Question</a
+              >
             </div>
           </div>
         </div>
@@ -272,7 +284,9 @@
               <img src="./assets/images/buy.png" /><a class="buybutton">Buy</a>
             </div>
             <div class="buybutton">
-              <img src="./assets/images/ques.png" /><a class="buybutton">Question</a>
+              <img src="./assets/images/ques.png" /><a class="buybutton"
+                >Question</a
+              >
             </div>
           </div>
         </div>
@@ -304,7 +318,9 @@
               <img src="./assets/images/buy.png" /><a class="buybutton">Buy</a>
             </div>
             <div class="buybutton">
-              <img src="./assets/images/ques.png" /><a class="buybutton">Question</a>
+              <img src="./assets/images/ques.png" /><a class="buybutton"
+                >Question</a
+              >
             </div>
           </div>
         </div>
@@ -336,7 +352,9 @@
               <img src="./assets/images/buy.png" /><a class="buybutton">Buy</a>
             </div>
             <div class="buybutton">
-              <img src="./assets/images/ques.png" /><a class="buybutton">Question</a>
+              <img src="./assets/images/ques.png" /><a class="buybutton"
+                >Question</a
+              >
             </div>
           </div>
         </div>
@@ -372,15 +390,33 @@
       </p>
       <hr class="rule" />
       <div class="allbrands gallitems">
-        <div class="brandname"><img src="./assets/images/gallery/g1.png" /></div>
-        <div class="brandname"><img src="./assets/images/gallery/g2.png" /></div>
-        <div class="brandname"><img src="./assets/images/gallery/g3.png" /></div>
-        <div class="brandname"><img src="./assets/images/gallery/g4.png" /></div>
-        <div class="brandname"><img src="./assets/images/gallery/g5.png" /></div>
-        <div class="brandname"><img src="./assets/images/gallery/g6.png" /></div>
-        <div class="brandname"><img src="./assets/images/gallery/g7.png" /></div>
-        <div class="brandname"><img src="./assets/images/gallery/g8.png" /></div>
-        <div class="brandname"><img src="./assets/images/gallery/g9.png" /></div>
+        <div class="brandname">
+          <img src="./assets/images/gallery/g1.png" />
+        </div>
+        <div class="brandname">
+          <img src="./assets/images/gallery/g2.png" />
+        </div>
+        <div class="brandname">
+          <img src="./assets/images/gallery/g3.png" />
+        </div>
+        <div class="brandname">
+          <img src="./assets/images/gallery/g4.png" />
+        </div>
+        <div class="brandname">
+          <img src="./assets/images/gallery/g5.png" />
+        </div>
+        <div class="brandname">
+          <img src="./assets/images/gallery/g6.png" />
+        </div>
+        <div class="brandname">
+          <img src="./assets/images/gallery/g7.png" />
+        </div>
+        <div class="brandname">
+          <img src="./assets/images/gallery/g8.png" />
+        </div>
+        <div class="brandname">
+          <img src="./assets/images/gallery/g9.png" />
+        </div>
       </div>
     </section>
 
@@ -524,15 +560,14 @@
         </div>
       </div>
     </section>
-    <section class="mostviewed"></section>
-    <div class="mostviewedcard">
-        <img src="">
+    <!-- <section class="mostviewed">
+      <div class="mostviewedcard">
+        <img src="" />
         <div>
-            <h2>Oversized Sunglasses</h2>
-            <h4>$397.00</h4>
+          <h2>Oversized Sunglasses</h2>
+          <h4>$397.00</h4>
         </div>
-
-
-    </div>
+      </div>
+    </section> -->
   </body>
 </html>
