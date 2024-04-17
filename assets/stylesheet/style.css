@@ -34,35 +34,40 @@ header {
 }
 
 .menuoptions {
-  display: flex;
- 
+  display: flex;  
+  justify-content: center;
+  
 }
 
 .menuList {
   display: flex;
-  list-style-type: none;
+  list-style-type: none; 
+  margin-top: 1.3rem;
+  padding: 0;
   
 }
 
 .menuList a {
-  margin: 0 2px;
+  margin: 0 0px;
   font-size: large;
 }
 
-.menuList li {
+.menuList li { 
   padding: 0 0.4rem;
 }
 
 .languages {
   display: flex;
-  margin-top: 1.25rem;
+  margin-top: 1.20rem;
   font-size: large;
+  
 }
 
 .moreMenuSection {
   display: flex;
   margin-top: 1.25rem;
   font-size: large;
+  
 }
 
 select {
@@ -91,7 +96,6 @@ select {
 
 .all {
   display: flex;
-
   height: 55%;
   border: 2px solid black;
   background-color: var(--blue-background);
