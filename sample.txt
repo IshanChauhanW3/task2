@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .m0{
+            margin: 0;
+        }
+        .wrapper{
+            max-width: 1140px;
+            margin: auto;
+        }
+        .topNavBar{
+            display: flex;
+            justify-content: space-between;
+        }
+        .topNavBar ul{
+            margin: 0;
+            padding: 0;
+        }
+        .topNavBar ul li{
+            list-style-type: none;
+            display: inline-block;
+        }
+        .topNavBar ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            display: inline-block;
+            border: 1px solid #ccc;
+        }
+        .topNavBar ul li a:hover{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="wrapper">
+            <div class="topNavBar">
+                <div class="topNavBar_left">
+                    <ul>
+                        <li><a href=""><i class="fa fa-home"></i> Home</a></li>
+                        <li><a href=""><i class="fa fa-address-card-o"></i> About us</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="topNavBar_center">
+                    <ul>
+                        <li><a href="">English</a></li>
+                        <li><a href="">US Dollar</a></li>
+                    </ul>
+                </div>
+                <div class="topNavBar_right">
+                    <ul>
+                        <li><a href="">More Menu</a></li>
+                        <li><a href="">Delivery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    
+</body>
+</html>

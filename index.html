@@ -3,109 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta
       name="viewport"
       content="user-scalable=no, width=device-width, initial-scale=1.0"
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+
     <title>Document</title>
     <link rel="stylesheet" href="./assets/stylesheet/style.css" />
   </head>
-
   <body>
     <header>
-      <div class="menuoptions">
-        <ul class="menuList">
-          <li><img src="./assets/images/home.png" /><a>Home</a></li>
-          <li><img src=",/assets/images/about.png" /><a>About Us </a></li>
-          <li><img src="./assets/images/contact.png" /><a>Contact</a></li>
-          <li>
-            <img src="./assets/images/faq.png" />
-            <lable for="faq">FAQ</lable>
-            <select name="faq" id="select"></select>
-          </li>
-        </ul>
-      </div>
+      <div class="wrapper">
+        <div class="menubar">
+          <div>
+            <ul class="menuList m-0 p-0">
+              <li>
+                <a href=""><i class="fa fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-address-card-o"></i>About Us </a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-phone"></i>Contact</a>
+              </li>
+              <li>
+                <a href=""><i class="fa fa-question-circle-o"></i>FAQ</a>
+              </li>
+            </ul>
+          </div>
 
-      <div class="languages">
-        <div class="languageSection">
-          <img src="./assets/images/flag.png" />
-          <lable for="lang">English</lable>
-          <select name="lang" id="name"></select>
-        </div>
-
-        <div class="currencySection">
-          <img src="./assets/images/dollar.png" />
-          <lable for="lang">US Dollar</lable>
-          <select name="lang" id="name"></select>
-        </div>
-      </div>
-      <div class="moreMenuSection">
-        <div class="moremenu">
-          <img src="./assets/images/moremenu.png" />
-          <lable for="moremenu">More Menu</lable>
-          <select name="moremenu"></select>
-        </div>
-
-        <div class="delivery">
-          <img src="./assets/images/delivery.png" />
-          <lable for="delivery">Delivery</lable>
+          <div class="language-currency">
+            <div class="m-0 p-0">
+              <ul>
+                <li>
+                  <a href=""><i class="fa fa-flag-checkered"></i>English</a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-dollar"></i>Currency</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="moremenu">
+            <div class="m-0 p-0">
+              <ul>
+                <li>
+                  <a href=""><i class="fa fa-align-justify"></i>More Menu</a>
+                </li>
+                <li>
+                  <a href=""><i class="fa fa-cart-plus"></i>Delivery</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="navbar">
-      <div class="logo"><img src="./assets/images/logo.png" /></div>
-      <div class="search">
-        <div class="all">
-          <a class="searchAll">All</a>
-          <select class="selectAll"></select>
+    <section>
+      <div class="wrapper">
+        <div class="navbar">
+          <div class="logo"><img src="./assets/images/logo.png" /></div>
+          <div class="search">
+            <div class="search-child">
+              <a class="searchAll m-0 p-0"
+                >All<i class="fa fa-angle-down"></i
+              ></a>
+              <input
+                class="m-0 p-0"
+                type="text"
+                id=""
+                name=""
+                value=""
+                placeholder="Search here..."
+              />
+              <button class="m-0 p-0"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+          <div class="options">
+            <div>
+              <img src="./assets/images/user.png" />
+              <lable>Login</lable>
+            </div>
+            <div>
+              <img src="./assets/images/pen.png" />
+              <lable>Register</lable>
+            </div>
+            <div>
+              <img src="./assets/images/heart.png" />
+              <lable>Wishlist</lable>
+            </div>
+            <div>
+              <img src="./assets/images/compare.png" />
+              <lable>Compare</lable>
+            </div>
+          </div>
+          <div class="cart">
+            <a class="p-0"
+              >0 item(s)- $0.00
+              <div class="cartIcon"><i class="fa fa-cart-plus"></i></div
+            ></a>
+          </div>
         </div>
-        <input
-          type="text"
-          id=""
-          name=""
-          value=""
-          placeholder="Search here..."
-        />
-        <button><img src="./assets/images/loupe.png" /></button>
-      </div>
-      <div class="options">
-        <div>
-          <img src="./assets/images/user.png" />
-          <lable>Login</lable>
-        </div>
-        <div>
-          <img src="./assets/images/pen.png" />
-          <lable>Register</lable>
-        </div>
-        <div>
-          <img src="./assets/images/heart.png" />
-          <lable>Wishlist</lable>
-        </div>
-        <div>
-          <img src="./assets/images/compare.png" />
-          <lable>Compare</lable>
-        </div>
-      </div>
-      <div class="cart">
-        <div class="cartInfo">
-          <p>0 item(s)- $0.00</p>
-        </div>
-        <div class="cartButton"><img src="./assets/images/cart.png" /></div>
       </div>
     </section>
+
     <nav>
-      <ul class="navoptions">
-        <li><img src="./assets/images/more.png" />ALL DEPARTMENTS</li>
-        <li>MULTILEVEL</li>
-        <li>MEGA MENU</li>
-        <li>FULLWIDTH</li>
-      </ul>
-      <ul class="navoptions contactMenu">
-        <p><img src="./assets/images/call.png" />1.800.555.6789</p>
-        <li>BLOG</li>
-      </ul>
+      <div class="wrapper">
+        <div class="navbaroptions">
+          <div class="navoptions">
+            <ul>
+              <li>
+                <a href=""><i class="fa fa-bars"></i> ALL DEPARTMENTS</a>
+              </li>
+              <li><a href="">MULTILEVEL</a></li>
+              <li><a href="">MEGA MENU</a></li>
+              <li><a href="">FULLWIDTH</a></li>
+            </ul>
+          </div>
+          <div class="navoptions">
+            <ul>
+              <li>
+                <a href=""><i class="fa fa-phone"></i> 1.800.555.6789</a>
+              </li>
+              <li><a href="">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <section class="highlight">
