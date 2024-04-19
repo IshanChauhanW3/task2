@@ -36,8 +36,7 @@ i {
 .wrapper {
   max-width: 1140px;
   margin: auto;
-  //border:2px solid;
-
+  
 }
 
 .m-0 {
@@ -650,19 +649,9 @@ nav {
   width: 1vw;
 }
 .latest{
-  border: 2px solid;
-}
-
-.latestblog {
-  border: 2px solid;
-
-}
-
-.latestblog img {
-  height: 100%;
-  width: 20%;
   
 }
+
 
 .latestblog p {
   
