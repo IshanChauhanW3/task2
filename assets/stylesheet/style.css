@@ -10,13 +10,13 @@
 
 @media screen and (max-width: 600px) {
   .search-child input {
-    width: 160px;   
+    width: 160px;
   }
 }
 
 @media screen and (max-width: 1040px) {
-  .options{
-    display:none;
+  .options {
+    display: none;
   }
 }
 
@@ -30,13 +30,14 @@ body {
 i {
   margin: 0.2vw;
   padding: 0;
+  display: inline;
 }
 
 .wrapper {
   max-width: 1140px;
   margin: auto;
-  
-  
+  border:2px solid;
+
 }
 
 .m-0 {
@@ -71,6 +72,9 @@ img {
   height: 1.8vw;
 }
 
+input{
+  display: inline-block;
+}
 .greybg {
   padding-top: 1rem;
   background-color: var(--grey-shade-bg);
@@ -116,7 +120,7 @@ section {
 .search-child input {
   font-size: 1vw;
   width: 16vw;
-  height:auto;
+  height: auto;
 }
 
 .search-child a {
@@ -144,7 +148,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
 }
 
 .options img {
@@ -167,7 +171,8 @@ section {
   background-color: var(--blue-background);
 
 }
-.cart a{
+
+.cart a {
   font-size: 1vw;
 }
 
@@ -183,14 +188,14 @@ nav {
 }
 
 .navbaroptions {
-  
+
   display: flex;
   justify-content: space-between;
 
 }
 
 .navoptions {
-  
+
   list-style-type: none;
 
 }
@@ -301,12 +306,8 @@ nav {
   font-size: 0.7vw;
 }
 
-.categories {
-  
-}
-
 .categories h1 {
-  
+
   color: var(--medium-grey);
   font-size: 2vw;
   text-align: center;
@@ -318,8 +319,8 @@ nav {
 }
 
 .categories p {
-  text-align: center;  
-  font-size: 1.1vw;
+  text-align: center;
+  font-size: 1vw;
   padding: 1vw;
   color: var(--balanced-grey)
 }
@@ -350,38 +351,39 @@ nav {
 }
 
 .catCards {
-  
+
   display: flex;
   justify-content: center;
-  
+
 }
-.cardimg-tag{
-  padding: 1rem;
-  position: relative;    
-  display: flex; 
-  justify-content:center;
-  
+
+.cardimg-tag {
+  padding: 0.4vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
 }
 
 .catCards img {
- 
+
   height: 100%;
   width: 100%;
   border-radius: 8px;
- 
+
 }
 
-.cardlink{
-  
-    text-align: center;
-    padding:0.5vw 0;
-    position: absolute; 
-    align-self: center;
-    top: 74%;
-    background-color: white;  
-    border-radius: 8px;
-    font-size: 1vw;
-    
+.cardlink {
+
+  text-align: center;
+  padding: 0.5vw 0;
+  position: absolute;
+  align-self: center;
+  top: 74%;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 1vw;
+
 }
 
 .fpdts {
@@ -392,7 +394,7 @@ nav {
   display: flex;
   position: relative;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0.5vw 0;
 }
 
@@ -405,6 +407,7 @@ nav {
 }
 
 .pimage {
+ 
   height: 20vw;
   width: 18vw;
 }
@@ -412,13 +415,13 @@ nav {
 .pname {
   display: flex;
   background-color: var(--lightgrey);
-  
   justify-content: space-between;
-  
+
 }
-.pname p{
-  font-size: 0.9vw;
-  padding: 0.4vw;  
+
+.pname p {
+  font-size: 1vw;
+  padding: 0.4vw;
   margin: 0;
 }
 
@@ -427,7 +430,7 @@ nav {
   background-color: var(--lightgrey);
   justify-content: space-between;
   font-size: 0.9vw;
-  padding: 0.4vw;  
+  padding: 0.4vw;
   margin: 0;
 }
 
@@ -436,7 +439,7 @@ nav {
 }
 
 .buybutton {
-  
+
   color: var(--balanced-grey);
 }
 
@@ -446,7 +449,7 @@ nav {
 
 .price {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   flex-wrap: wrap;
   align-content: flex-start;
 }
@@ -454,38 +457,40 @@ nav {
 .price h3 {
   font-size: 1.3vw;
   font-weight: 460;
-  margin:1vw 0;
-  
+  padding: 0.4vw;
+
 }
 
 .price h5 {
   font-size: 0.9vw;
   font-weight: 300;
-  
+  padding: 0.4vw;
 }
 
 .pothers {
-  margin:1vw 0;
-  display: flex;
-  justify-content: space-between;
+  margin: 1vw 0;
+  display: flex;   
+  justify-content: space-around;
   width: 98%;
+  
 }
 
 .pothers button {
   background-color: var(--blue-shade-button);
   color: white;
-  font-size: 0.9vw; 
-  padding: 0.5vw;
+  font-size: 0.8vw;
+  padding: 0.4vw;
   border: none;
+ 
 }
 
 .pothers input {
-  height: 1.6vw;
-  width: 1.6vw;
+  height: 1.2vw;
+  width: 3vw;
 }
 
 .discounttag {
-  
+
   font-size: 0.9vw;
   font-weight: 600;
   border-radius: 5px;
@@ -495,15 +500,15 @@ nav {
   top: 1%;
   left: 83%;
   border: none;
-  
   background-color: red;
 }
 
-.allproducts{
+.allproducts {
   display: flex;
   justify-content: center;
   margin: 2vw 0;
 }
+
 .allproducts a {
 
   background-color: var(--blue-background);
@@ -511,55 +516,46 @@ nav {
   font-weight: 500;
   font-size: 1vw;
   border: none;
-  
-}
 
-.brands {
-  margin-top: 10rem;
-}
-
-.brandname {
-  margin: 0 1.5rem;
 }
 
 .allbrands {
   display: flex;
-  justify-content: center;
+  margin: 2vw 0.4vw;
+  justify-content: space-between;
 }
 
 .allbrands img {
   height: 80%;
-  width: 100%;
-  margin: 1rem;
+  width: 100%;  
   border: 2px solid var(--lightgrey);
   border-radius: 4px;
 }
 
-.gallery {
+.gallery {  
   background-color: var(--dark-grey);
-  padding: 1rem 0;
+ 
 }
 
 .gallery h1 {
+  padding: 2vw;
   color: white;
 }
 
 .gallery p {
   color: var(--balanced-grey);
-  font-size: medium;
+  font-size: 1vw;
 }
 
 .gallery img {
-  height: 70%;
-  width: 80%;
-  border-radius: 0.5rem;
+ 
+  border-radius: 0.5vw;
   border: none;
 }
 
 .gallitems {
-  justify-content: center;
-  padding-right: 2.6rem;
-  padding-left: 4rem;
+  justify-content: space-between;
+  
 }
 
 .latest {
