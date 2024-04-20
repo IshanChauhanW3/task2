@@ -36,7 +36,7 @@ i {
 .wrapper {
   max-width: 1140px;
   margin: auto;
-  
+
 }
 
 .m-0 {
@@ -71,11 +71,12 @@ img {
   height: 1.8vw;
 }
 
-input{
+input {
   display: inline-block;
 }
+
 .greybg {
-  
+
   background-color: var(--grey-shade-bg);
 }
 
@@ -100,12 +101,12 @@ section {
 }
 
 .navbar {
-  
+
   margin: 2vw 0;
   padding: 1vw;
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .logo img {
@@ -166,7 +167,8 @@ section {
   text-align: center;
 
 }
-.cart{
+
+.cart {
   padding-top: 0.5vw;
 }
 
@@ -202,9 +204,9 @@ nav {
 }
 
 .navoptions {
- 
+
   list-style-type: none;
-  
+
 }
 
 .navoptions li {
@@ -416,7 +418,7 @@ nav {
 }
 
 .pimage {
- 
+
   height: 20vw;
   width: 18vw;
 }
@@ -458,7 +460,7 @@ nav {
 
 .price {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
 }
@@ -478,10 +480,10 @@ nav {
 
 .pothers {
   margin: 1vw 0;
-  display: flex;   
+  display: flex;
   justify-content: space-around;
   width: 98%;
-  
+
 }
 
 .pothers button {
@@ -490,7 +492,7 @@ nav {
   font-size: 0.8vw;
   padding: 0.4vw;
   border: none;
- 
+
 }
 
 .pothers input {
@@ -536,14 +538,14 @@ nav {
 
 .allbrands img {
   height: 80%;
-  width: 90%;  
+  width: 90%;
   border: 2px solid var(--lightgrey);
   border-radius: 4px;
 }
 
-.gallery {  
+.gallery {
   background-color: var(--dark-grey);
- 
+
 }
 
 .gallery h1 {
@@ -557,20 +559,20 @@ nav {
 }
 
 .gallery img {
- 
+
   border-radius: 0.5vw;
   border: none;
 }
 
 .gallitems {
   justify-content: space-between;
-  
+
 }
 
 .latest {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .latestcards {
@@ -578,21 +580,22 @@ nav {
   display: flex;
   position: relative;
   flex-direction: column;
-  
+
 }
 
 .latestcards-img {
-  border-radius: 1vw; 
- align-self: center;
+  border-radius: 1vw;
+  align-self: center;
   height: 70%;
   width: 97%;
-  
+
 }
+
 .latestcards img {
-  border-radius: 1vw;  
+  border-radius: 1vw;
   height: 96%;
   width: 97%;
-  
+
 }
 
 .latestcards h2 {
@@ -605,14 +608,14 @@ nav {
   color: black;
   font-weight: 300;
   text-align: center;
-  
+
 }
 
 .latestcards a {
   font-size: 0.6vw;
   font-weight: 300;
   text-align: center;
-  
+
 }
 
 .datetags {
@@ -625,7 +628,7 @@ nav {
 }
 
 .datetags p {
-  padding:  0.2vw;
+  padding: 0.2vw;
   margin: 0;
   color: white;
   font-weight: 600;
@@ -650,7 +653,7 @@ nav {
   color: black;
   font-size: 0.9vw;
   padding: 0 1vw;
- 
+
 }
 
 .views img {
@@ -660,13 +663,13 @@ nav {
 }
 
 .latestblog p {
-  
+
   font-size: 1.2vw;
-  font-weight: 350; 
+  font-weight: 350;
 }
 
 .latestblog h4 {
- font-size: 1vw;
+  font-size: 1vw;
   text-align: center;
   color: var(--balanced-grey);
 }
