@@ -100,6 +100,7 @@ section {
 }
 
 .navbar {
+  
   margin: 3% 0;
   padding: 1vw;
   display: flex;
@@ -194,9 +195,9 @@ nav {
 }
 
 .navoptions {
-
+ 
   list-style-type: none;
-
+  
 }
 
 .navoptions li {
@@ -207,13 +208,15 @@ nav {
 }
 
 .navoptions li a {
+  vertical-align: middle;
   font-size: 1vw;
-  padding: 1vw;
+  padding: 0.4vw;
   color: white;
 }
 
 .navoptions li a:hover {
-  padding: 1vw;
+  font-size: 1vw;
+  padding: 1vw 0.4vw;
   background-color: yellow;
   color: black;
 
@@ -652,7 +655,7 @@ nav {
 .latestblog p {
   
   font-size: 1.2vw;
-  font-weight: 350;
+  font-weight: 350; 
 }
 
 .latestblog h4 {
