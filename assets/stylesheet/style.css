@@ -101,18 +101,21 @@ section {
 
 .navbar {
   
-  margin: 3% 0;
+  margin: 2vw 0;
   padding: 1vw;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .logo img {
+  padding-top: 1vw;
   width: 16vw;
   height: auto;
 }
 
 .search-child {
+  padding-top: 1vw;
   display: flex;
 
 }
@@ -163,17 +166,21 @@ section {
   text-align: center;
 
 }
+.cart{
+  padding-top: 0.5vw;
+}
 
 .cartIcon {
   display: inline-block;
-  padding: 4px;
-  margin: 4px;
+  padding: 0.2vw;
+  margin: 0.2vw;
   background-color: var(--blue-background);
 
 }
 
 .cart a {
   font-size: 1vw;
+  vertical-align: top;
 }
 
 .cartIcon i {
