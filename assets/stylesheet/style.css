@@ -28,14 +28,15 @@ body {
 }
 
 i {
-  margin: 0.2vw;
+  margin: 0.2rem;
   padding: 0;
   display: inline;
 }
 
 .wrapper {
-  max-width: 1140px;
+  max-width: 80rem;
   margin: auto;
+  /* border: 2px solid; */
 
 }
 
@@ -51,7 +52,7 @@ a {
   color: var(--balanced-grey);
   text-decoration: none;
   margin: 0;
-  padding: 0.6vw;
+  padding: 0.6rem;
 }
 
 ul {
@@ -67,8 +68,8 @@ li {
 }
 
 img {
-  width: 1.8vw;
-  height: 1.8vw;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 input {
@@ -96,48 +97,48 @@ section {
 }
 
 .menubar li a {
-  font-size: 1vw;
+  font-size: 1rem;
   color: var(--balanced-grey);
 }
 
 .navbar {
 
-  margin: 2vw 0;
-  padding: 1vw;
+  margin: 2rem 0;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
 
 }
 
 .logo img {
-  padding-top: 1vw;
-  width: 16vw;
+  padding-top: 1rem;
+  width: 16rem;
   height: auto;
 }
 
 .search-child {
-  padding-top: 1vw;
+  padding-top: 1rem;
   display: flex;
 
 }
 
 .search-child input {
-  font-size: 1vw;
-  width: 16vw;
+  font-size: 1rem;
+  width: 16rem;
   height: auto;
 }
 
 .search-child a {
-  font-size: 1vw;
+  font-size: 1rem;
   color: white;
-  padding: 0.5vw;
+  padding: 0.5rem;
   background-color: var(--blue-background);
 
 }
 
 .search button {
   color: white;
-  padding: 0.5vw;
+  padding: 0.5rem;
   background-color: var(--blue-background);
 }
 
@@ -162,26 +163,26 @@ section {
 
 .options lable {
   color: var(--balanced-grey);
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 350;
   text-align: center;
 
 }
 
 .cart {
-  padding-top: 0.5vw;
+  padding-top: 0.5rem;
 }
 
 .cartIcon {
   display: inline-block;
-  padding: 0.2vw;
-  margin: 0.2vw;
+  padding: 0.2rem;
+  margin: 0.2rem;
   background-color: var(--blue-background);
 
 }
 
 .cart a {
-  font-size: 1vw;
+  font-size: 1rem;
   vertical-align: top;
 }
 
@@ -210,7 +211,7 @@ nav {
 }
 
 .navoptions li {
-  padding: 1vw;
+  padding: 1rem;
   display: inline-block;
   color: white;
 
@@ -218,14 +219,14 @@ nav {
 
 .navoptions li a {
   vertical-align: middle;
-  font-size: 1vw;
-  padding: 0.4vw;
+  font-size: 1rem;
+  padding: 0.4rem;
   color: white;
 }
 
 .navoptions li a:hover {
-  font-size: 1vw;
-  padding: 1vw 0.4vw;
+  font-size: 1rem;
+  padding: 1rem 0.4rem;
   background-color: yellow;
   color: black;
 
@@ -254,10 +255,9 @@ nav {
   top: 65.2%;
   left: 25%;
   background: transparent;
-  border: 2px solid var(--balanced-grey);
-  font-size: large;
-  border-radius: 4px;
-  font-size: medium;
+  border: 0.2rem solid var(--balanced-grey);
+  font-size: 1rem;
+  border-radius: 0.5rem; 
   color: var(--dark-grey);
   display: inline;
 }
@@ -289,38 +289,38 @@ nav {
 .fset {
   display: flex;
   justify-content: space-between;
-  padding: 0.6vw;
+  padding: 0.6rem;
 }
 
 .flogo {
-  margin: 0.3vw;
+  margin: 0.3rem;
 }
 
 .flogo img {
   border: 2px solid var(--blue-background);
-  height: 2.5vw;
-  width: 2.5vw;
-  padding: 0.6vw;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0.6rem;
   border-radius: 100%;
 
 }
 
 .mainf {
   color: white;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 450;
 
 }
 
 .subf {
   color: var(--grey-shade-bg);
-  font-size: 0.7vw;
+  font-size: 0.7rem;
 }
 
 .categories h1 {
 
   color: var(--medium-grey);
-  font-size: 2vw;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -331,8 +331,8 @@ nav {
 
 .categories p {
   text-align: center;
-  font-size: 1vw;
-  padding: 1vw;
+  font-size: 1rem;
+  padding: 1rem;
   color: var(--balanced-grey)
 }
 
@@ -343,16 +343,16 @@ nav {
 .catOptions {
   list-style: none;
   display: flex;
-  padding: 1vw;
+  padding: 1rem;
   justify-content: center;
 
 }
 
 .catOptions li {
-  padding: 0.8vw;
+  padding: 0.8rem;
   background-color: var(--lightgrey);
   font-weight: 500;
-  font-size: 1vw;
+  font-size: 1rem;
   color: var(--medium-grey);
 }
 
@@ -369,7 +369,7 @@ nav {
 }
 
 .cardimg-tag {
-  padding: 0.4vw;
+  padding: 0.4rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -387,13 +387,13 @@ nav {
 .cardlink {
 
   text-align: center;
-  padding: 0.5vw 0;
+  padding: 0.5rem 0;
   position: absolute;
   align-self: center;
   top: 74%;
   background-color: white;
   border-radius: 8px;
-  font-size: 1vw;
+  font-size: 1rem;
 
 }
 
@@ -406,21 +406,21 @@ nav {
   position: relative;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0.5vw 0;
+  margin: 0.5rem 0;
 }
 
 .cartItem {
   display: flex;
   position: relative;
-  margin: 0.4vw;
+  margin: 0.4rem;
   flex-direction: column;
   border: 2px solid var(--lightgrey);
 }
 
 .pimage {
 
-  height: 20vw;
-  width: 18vw;
+  height: 20rem;
+  width: 18rem;
 }
 
 .pname {
@@ -431,8 +431,8 @@ nav {
 }
 
 .pname p {
-  font-size: 1vw;
-  padding: 0.4vw;
+  font-size: 1rem;
+  padding: 0.4rem;
   margin: 0;
 }
 
@@ -440,8 +440,8 @@ nav {
   display: flex;
   background-color: var(--lightgrey);
   justify-content: space-between;
-  font-size: 0.9vw;
-  padding: 0.4vw;
+  font-size: 0.9rem;
+  padding: 0.4rem;
   margin: 0;
 }
 
@@ -466,20 +466,20 @@ nav {
 }
 
 .price h3 {
-  font-size: 1.3vw;
+  font-size: 1.3rem;
   font-weight: 460;
-  padding: 0.4vw;
+  padding: 0.4rem;
 
 }
 
 .price h5 {
-  font-size: 0.9vw;
+  font-size: 0.9rem;
   font-weight: 300;
-  padding: 0.4vw;
+  padding: 0.4rem;
 }
 
 .pothers {
-  margin: 1vw 0;
+  margin: 1rem 0;
   display: flex;
   justify-content: space-around;
   width: 98%;
@@ -489,23 +489,23 @@ nav {
 .pothers button {
   background-color: var(--blue-shade-button);
   color: white;
-  font-size: 0.8vw;
-  padding: 0.4vw;
+  font-size: 0.8rem;
+  padding: 0.4rem;
   border: none;
 
 }
 
 .pothers input {
-  height: 1.2vw;
-  width: 3vw;
+  height: 1.2rem;
+  width: 3rem;
 }
 
 .discounttag {
 
-  font-size: 0.9vw;
+  font-size: 0.9rem;
   font-weight: 600;
   border-radius: 5px;
-  padding: 0.4vw;
+  padding: 0.4rem;
   color: white;
   position: absolute;
   top: 1%;
@@ -517,7 +517,7 @@ nav {
 .allproducts {
   display: flex;
   justify-content: center;
-  margin: 2vw 0;
+  margin: 2rem 0;
 }
 
 .allproducts a {
@@ -525,14 +525,14 @@ nav {
   background-color: var(--blue-background);
   color: white;
   font-weight: 500;
-  font-size: 1vw;
+  font-size: 1rem;
   border: none;
 
 }
 
 .allbrands {
   display: flex;
-  margin: 1vw 0.4vw;
+  margin: 1rem 0.4rem;
   justify-content: space-between;
 }
 
@@ -549,18 +549,18 @@ nav {
 }
 
 .gallery h1 {
-  padding: 2vw;
+  padding: 2rem;
   color: white;
 }
 
 .gallery p {
   color: var(--balanced-grey);
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 .gallery img {
 
-  border-radius: 0.5vw;
+  border-radius: 0.5rem;
   border: none;
 }
 
@@ -580,11 +580,11 @@ nav {
   display: flex;
   position: relative;
   flex-direction: column;
-
+  
 }
 
 .latestcards-img {
-  border-radius: 1vw;
+  border-radius: 1rem;
   align-self: center;
   height: 70%;
   width: 97%;
@@ -592,19 +592,19 @@ nav {
 }
 
 .latestcards img {
-  border-radius: 1vw;
+  border-radius: 1rem;
   height: 96%;
   width: 97%;
 
 }
 
 .latestcards h2 {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .latestcards p {
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   color: black;
   font-weight: 300;
   text-align: center;
@@ -612,7 +612,7 @@ nav {
 }
 
 .latestcards a {
-  font-size: 0.6vw;
+  font-size: 0.6rem;
   font-weight: 300;
   text-align: center;
 
@@ -628,15 +628,15 @@ nav {
 }
 
 .datetags p {
-  padding: 0.2vw;
+  padding: 0.2rem;
   margin: 0;
   color: white;
   font-weight: 600;
-  font-size: 0.8vw;
+  font-size: 0.8rem;
 }
 
 .datepart {
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 .views {
@@ -651,25 +651,44 @@ nav {
 
 .views p {
   color: black;
-  font-size: 0.9vw;
-  padding: 0 1vw;
+  font-size: 0.9rem;
+  padding: 0 1rem;
 
 }
 
 .views img {
-  padding: 0 0.1vw;
-  height: 1vw;
-  width: 1vw;
+  padding: 0 0.1rem;
+  height: 1rem;
+  width: 1rem;
+}
+.latestblog{
+  display: flex;
+  justify-content: space-between;
 }
 
+.latestblog{
+  
+  width:30%;
+  
+}
+.latestblog img{
+  margin-top: 2rem;
+  height: 4rem;
+  width:4rem;
+  align-self: center;
+  
+}
 .latestblog p {
-
-  font-size: 1.2vw;
+  padding: 0 0.5rem;
+  font-size: 1rem;
   font-weight: 350;
+  
 }
 
 .latestblog h4 {
-  font-size: 1vw;
+  
+  font-size: 1rem;
   text-align: center;
   color: var(--balanced-grey);
+  
 }
