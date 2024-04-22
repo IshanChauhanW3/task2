@@ -10,39 +10,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      media="(max-width: 1060px)"
-      href="./assets/stylesheet/mobile-style.css"
-    />
-    <meta
-      name="viewport"
-      content="user-scalable=no, width=device-width, initial-scale=1.0"
-    />
-
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      media="(min-width: 1060px)"
-      href="./assets/stylesheet/style.css"
-    />
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
   </head>
   <body>
     <header>
       <div class="wrapper">
-        <div class="menubar">
+        <a id="dropdown-menubar" class="menubar-dropdown m-0 p-0" href=""
+          ><i class="fa fa-bars"></i
+        ></a>
+        <div id="menubar" class="menubar">
           <div>
             <ul class="m-0 p-0">
-              <li>
+              <li class="show">
                 <a href=""><i class="fa fa-home"></i>Home</a>
               </li>
-              <li>
+              <li class="show">
                 <a href=""><i class="fa fa-address-card-o"></i>About Us </a>
               </li>
-              <li>
+              <li class="show">
                 <a href=""><i class="fa fa-phone"></i>Contact</a>
               </li>
-              <li>
+              <li class="show">
                 <a href=""><i class="fa fa-question-circle-o"></i>FAQ</a>
               </li>
             </ul>
@@ -51,10 +40,10 @@
           <div class="language-currency">
             <div class="m-0 p-0">
               <ul>
-                <li>
+                <li class="show">
                   <a href=""><i class="fa fa-flag-checkered"></i>English</a>
                 </li>
-                <li>
+                <li class="show">
                   <a href=""><i class="fa fa-dollar"></i>Currency</a>
                 </li>
               </ul>
@@ -63,10 +52,10 @@
           <div class="moremenu">
             <div class="m-0 p-0">
               <ul>
-                <li>
+                <li class="show">
                   <a href=""><i class="fa fa-align-justify"></i>More Menu</a>
                 </li>
-                <li>
+                <li class="show">
                   <a href=""><i class="fa fa-cart-plus"></i>Delivery</a>
                 </li>
               </ul>
@@ -80,6 +69,11 @@
       <div class="wrapper">
         <div class="navbar">
           <div class="logo"><img src="./assets/images/logo.png" /></div>
+          <div class="search-mobile">
+            <a id="login-logout" href=""><i class="fa fa-bars"></i></a>
+            <a href=""><i class="fa fa-search"></i></a>
+            <a href=""><i class="fa fa-cart-plus"></i></a>
+          </div>
           <div class="search">
             <div class="search-child">
               <a class="m-0 p-0">All<i class="fa fa-angle-down"></i></a>
@@ -119,12 +113,31 @@
             ></a>
           </div>
         </div>
+        <div id="navbar-dropdown" class="hide">
+          <div>
+            <img src="./assets/images/user.png" />
+            <lable>Login</lable>
+          </div>
+          <div>
+            <img src="./assets/images/pen.png" />
+            <lable>Register</lable>
+          </div>
+          <div>
+            <img src="./assets/images/heart.png" />
+            <lable>Wishlist</lable>
+          </div>
+          <div>
+            <img src="./assets/images/compare.png" />
+            <lable>Compare</lable>
+          </div>
+        </div>
       </div>
     </section>
 
     <nav>
       <div class="wrapper">
-        <div class="navbaroptions">
+        <a href="" id="nav-dropdown"><i class="fa fa-bars"></i></a>
+        <div id="navbaroptions-mobile" class="navbaroptions">
           <div class="navoptions">
             <ul>
               <li>
@@ -625,7 +638,19 @@
                 <p>
                   I am a web developer for many years i haven't seen anything
                   clear clean coded like journal it makes my live so much easier
-                  thanks for the great work you have done.
+                  thanks for the great work you have done. I am a web developer
+                  for many years i haven't seen anything clear clean coded like
+                  journal it makes my live so much easier thanks for the great
+                  work you have done.
+                </p>
+              </div>
+              <h4>- chromebandit</h4>
+            </div>
+            <div class="latestcards latestblog">
+              <img src="./assets/images/quotes.png" />
+
+              <div>
+                <p>
                   I am a web developer for many years i haven't seen anything
                   clear clean coded like journal it makes my live so much easier
                   thanks for the great work you have done.
@@ -641,38 +666,81 @@
                   I am a web developer for many years i haven't seen anything
                   clear clean coded like journal it makes my live so much easier
                   thanks for the great work you have done.
-                 
                 </p>
               </div>
               <h4>- chromebandit</h4>
             </div>
-            <div class="latestcards latestblog">
-              <img src="./assets/images/quotes.png" />
-
-              <div>
-                <p>
-                  I am a web developer for many years i haven't seen anything
-                  clear clean coded like journal it makes my live so much easier
-                  thanks for the great work you have done.
-                  </p>
-              </div>
-              <h4>- chromebandit</h4>
-            </div>
-
-
-          
           </div>
         </div>
       </div>
     </section>
-    <!-- <section class="mostviewed">
-      <div class="mostviewedcard">
-        <img src="" />
-        <div>
-          <h2>Oversized Sunglasses</h2>
-          <h4>$397.00</h4>
+
+    <section>
+      <div class="wrapper darkgreybg">
+        <div class="most-viewed darkgreybg">
+          <h2>Most Viewed</h2>
+          <hr />
+          <div class="most-viewed-items-container">
+            <div class="most-viewed-item">
+              <div class="most-viewed-img">
+                <img src="./assets/images/mostviewed/glasses.png" />
+              </div>
+              <div class="most-viewed-item-details">
+                <h3>Glasses for men</h3>
+                <p>$397.0</p>
+                <div class="most-viewed-items-icons">
+                  <a href=""><i class="fa fa-cart-plus"></i></a>
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-exchange"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="most-viewed-item">
+              <div class="most-viewed-img">
+                <img src="./assets/images/mostviewed/glasses.png" />
+              </div>
+              <div class="most-viewed-item-details">
+                <h3>Glasses for men</h3>
+                <p>$397.0</p>
+                <div class="most-viewed-items-icons">
+                  <a href=""><i class="fa fa-cart-plus"></i></a>
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-exchange"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="most-viewed-item">
+              <div class="most-viewed-img">
+                <img src="./assets/images/mostviewed/glasses.png" />
+              </div>
+              <div class="most-viewed-item-details">
+                <h3>Glasses for men</h3>
+                <p>$397.0</p>
+                <div class="most-viewed-items-icons">
+                  <a href=""><i class="fa fa-cart-plus"></i></a>
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-exchange"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="most-viewed-item">
+              <div class="most-viewed-img">
+                <img src="./assets/images/mostviewed/glasses.png" />
+              </div>
+              <div class="most-viewed-item-details">
+                <h3>Glasses for men</h3>
+                <p>$397.0</p>
+                <div class="most-viewed-items-icons">
+                  <a href=""><i class="fa fa-cart-plus"></i></a>
+                  <a href=""><i class="fa fa-heart"></i></a>
+                  <a href=""><i class="fa fa-exchange"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
+    <script src="./assets/javascript/app.js"></script>
   </body>
 </html>
