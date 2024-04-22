@@ -759,15 +759,16 @@ nav {
   }
 
   .menubar-dropdown {
-    margin: 0.6rem;
+    padding: 0.6rem;
     display: block;
+    background-color: var(--lightgrey);
   }
 
   .options {
     display: none;
   }
 
-  .show {
+  .show {    
     transition: all 10s ease-in;
     text-align: center;
     border-bottom: 0.5px solid var(--lightgrey);
