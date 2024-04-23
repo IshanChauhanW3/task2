@@ -645,9 +645,10 @@ nav {
 
 .views {
   display: flex;
+  background-color: aliceblue;
   justify-content: center;
   position: absolute;
-  top: 39%;
+  top: 20vw;
   left: 0%;
   width: 100%;
   opacity: 0.9;
@@ -656,7 +657,7 @@ nav {
 .views p {
   color: black;
   font-size: 0.9rem;
-  padding: 0 1rem;
+  padding: 0 0.6rem;
 
 }
 
@@ -777,10 +778,9 @@ nav {
   }
 
   .show {
-    transition:3s ease-out;
+    display: block;
     text-align: center;
     border-bottom: 0.5px solid var(--lightgrey);
-    display: block;
 
   }
 
@@ -848,8 +848,7 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 2px;
-
+    padding:2px 0;
   }
 
   .search-child-mobile a {
@@ -862,7 +861,7 @@ nav {
   }
 
   .search-child-mobile input {
-    width: 80%;
+    width: 79%;
     margin: 0rem;
     padding: 0.3rem;
     border: none;
@@ -977,9 +976,14 @@ nav {
     font-weight: 500;
     font-size: small;
   }
+
   .latestblog {
     display: flex;
     justify-content: unset;
   }
-  
+
+  .views {
+    top: 57vw;
+  }
+
 }
