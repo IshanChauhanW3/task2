@@ -12,6 +12,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 0;
+  padding-top: 1rem;
   margin: 0px;
 }
 
@@ -639,7 +640,7 @@ nav {
   margin: 0;
   color: white;
   font-weight: 600;
-  font-size:x-small;
+  font-size: x-small;
 }
 
 .views {
@@ -748,6 +749,13 @@ nav {
 }
 
 @media screen and (max-width:1060px) {
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 0;
+    margin: 0px;
+  }
+
   .wrapper {
     max-width: 1024px;
 
@@ -769,7 +777,7 @@ nav {
   }
 
   .show {
-    transition: all 10s ease-in;
+    transition:3s ease-out;
     text-align: center;
     border-bottom: 0.5px solid var(--lightgrey);
     display: block;
@@ -944,6 +952,7 @@ nav {
   .most-viewed-item {
     margin: 1rem;
   }
+
   .mainhighlight a {
     position: absolute;
     top: 64.2%;
@@ -960,12 +969,17 @@ nav {
     font-weight: 500;
 
   }
+
   .datetags p {
     padding: 0.2rem;
     margin: 0;
     color: white;
     font-weight: 500;
-    font-size:small;
+    font-size: small;
   }
-
+  .latestblog {
+    display: flex;
+    justify-content: unset;
+  }
+  
 }
