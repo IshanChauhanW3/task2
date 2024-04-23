@@ -284,6 +284,10 @@ nav {
   width: 100%;
 }
 
+.features-mobile {
+  display: none;
+}
+
 .features {
   display: flex;
   justify-content: space-between;
@@ -541,7 +545,7 @@ nav {
 
 .allbrands img {
   height: 80%;
-  width: 90%;
+  width: 99%;
   border: 2px solid var(--lightgrey);
   border-radius: 4px;
 }
@@ -597,7 +601,7 @@ nav {
 .latestcards img {
   border-radius: 1rem;
   height: 96%;
-  width: 97%;
+  width: 100%;
 
 }
 
@@ -768,7 +772,7 @@ nav {
     display: none;
   }
 
-  .show {    
+  .show {
     transition: all 10s ease-in;
     text-align: center;
     border-bottom: 0.5px solid var(--lightgrey);
@@ -785,6 +789,7 @@ nav {
   }
 
   .search-mobile {
+    padding-top: 1rem;
     display: flex;
   }
 
@@ -830,4 +835,116 @@ nav {
   #nav-dropdown i {
     color: white;
   }
+
+  .search-mobile {
+    display: block;
+  }
+
+  .search-child-mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2px;
+
+  }
+
+  .search-child-mobile a {
+    margin: 0;
+    font-size: small;
+    padding: 0.3rem;
+    color: white;
+    background-color: var(--blue-background);
+    border: none;
+  }
+
+  .search-child-mobile input {
+    width: 80%;
+    margin: 0rem;
+    padding: 0.3rem;
+    border: none;
+    background-color: var(--grey-shade-bg);
+  }
+
+  .highlight {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .subhighlight {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subhighlight img {
+    height: 90%;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .features {
+    display: none;
+  }
+
+  .features-mobile {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .features-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainf {
+    font-size: small;
+  }
+
+  .subf {
+    font-size: x-small;
+  }
+
+  .categories h1 {
+    font-size: larger;
+  }
+
+  .catOptions li {
+    font-size: 12px;
+  }
+
+  .catCards {
+    flex-wrap: wrap;
+  }
+
+  .cartItems {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .allbrands {
+    flex-wrap: wrap;
+  }
+
+  .latest {
+    flex-wrap: wrap;
+  }
+
+  .latest p {
+    font-size: medium;
+  }
+
+  .latest h4 {
+    font-size: small;
+  }
+
+  .most-viewed-items-container {
+    flex-wrap: wrap;
+
+  }
+
+  .most-viewed-item {
+    margin: 1rem;
+  }
+
 }

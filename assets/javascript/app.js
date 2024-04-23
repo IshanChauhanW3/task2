@@ -55,3 +55,13 @@ function addClassToElement(elementId, className) {
   } else {
     console.error("Anchor tag with ID 'addClassLink' not found.");
   }
+
+  var addClass=document.getElementById('mobile-search-button')
+  if(addClass){
+addClass.addEventListener('click',(e)=>{
+  e.preventDefault();
+  addClassToElement('search-mobile','search-mobile');
+});}
+else{
+  console.error("Anchor tag with ID 'addClassLink' not found.");
+}
