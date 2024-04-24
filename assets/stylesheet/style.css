@@ -373,15 +373,13 @@ nav {
 
   display: flex;
   justify-content: center;
+  margin: 1rem;
 
 }
 
 .cardimg-tag {
   padding: 0.4rem;
   position: relative;
-  display: flex;
-  justify-content: center;
-
 }
 
 .catCards img {
@@ -394,14 +392,20 @@ nav {
 
 .cardlink {
 
-  text-align: center;
   padding: 0.5rem 0;
   position: absolute;
-  align-self: center;
-  top: 74%;
+  text-align: center;
+  top: 80%;
+  left: 25%;
   background-color: white;
   border-radius: 8px;
+  width: 55%;
   font-size: 1rem;
+
+}
+
+.cardlink a {
+  align-self: center;
 
 }
 
@@ -413,16 +417,19 @@ nav {
   display: flex;
   position: relative;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0.5rem 0;
+
 }
 
 .cartItem {
   display: flex;
   position: relative;
+
   margin: 0.4rem;
   flex-direction: column;
   border: 2px solid var(--lightgrey);
+
 }
 
 .pimage {
@@ -586,6 +593,7 @@ nav {
 .latestcards {
   background-color: white;
   display: flex;
+  justify-content: center;
   position: relative;
   flex-direction: column;
 
@@ -612,7 +620,7 @@ nav {
 }
 
 .latestcards p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: black;
   font-weight: 300;
   text-align: center;
@@ -636,7 +644,7 @@ nav {
 }
 
 .datetags p {
-  padding: 0.2rem;
+  padding: 0.2vw;
   margin: 0;
   color: white;
   font-weight: 600;
@@ -648,7 +656,7 @@ nav {
   background-color: aliceblue;
   justify-content: center;
   position: absolute;
-  top: 20vw;
+  top: 45%;
   left: 0%;
   width: 100%;
   opacity: 0.9;
@@ -709,6 +717,7 @@ nav {
   padding: 1rem;
   margin: 0;
   color: white;
+  text-align: center;
 }
 
 .most-viewed h3 {
@@ -725,12 +734,14 @@ nav {
 
   display: flex;
   justify-content: space-around;
+  padding-bottom: 2rem;
 }
 
 .most-viewed-item {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  border-radius: 5px;
 
 }
 
@@ -746,6 +757,60 @@ nav {
 
 .most-viewed-item-details {
   width: 80%;
+
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-items {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-left: 2px solid var(--lightgrey);
+  padding: 1rem;
+}
+
+.footer-items h3 {
+  margin: 0%;
+  padding: 0%;
+  font-weight: 500;
+}
+
+.footer-items li {
+  display: block;
+  color: var(--blue-background)
+}
+
+.footer-items hr {
+  border-color: red;
+  width: 50%;
+  margin-left: 2px
+}
+
+.terms-conditions {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  background-color: var(--lightgrey);
+}
+
+.social a {
+  border: none;
+  margin: 0.5rem;
+  border-radius: 100%;
+  background-color: var(--blue-background);
+
+}
+
+.social i {
+  color: white;
 
 }
 
@@ -778,6 +843,7 @@ nav {
   }
 
   .show {
+
     display: block;
     text-align: center;
     border-bottom: 0.5px solid var(--lightgrey);
@@ -848,7 +914,7 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding:2px 0;
+    padding: 2px 0;
   }
 
   .search-child-mobile a {
@@ -909,29 +975,53 @@ nav {
   }
 
   .categories h1 {
-    font-size: larger;
+    font-size: x-large;
   }
 
   .catOptions li {
-    font-size: 12px;
-    font-weight: 600;
-    padding: 9px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 1rem;
   }
 
   .catCards {
     flex-wrap: wrap;
   }
 
-  .cartItems {
+  .cartItems-mobile {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.5rem auto;
+    width: 80%;
+  }
+
+  .latest {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .allbrands {
-    flex-wrap: wrap;
+  .views {
+    top: 20rem;
+
   }
 
-  .latest {
+  .latestcards {
+    height: 70%;
+    width: 60%;
+    margin: 1rem;
+  }
+
+  .latestcards-img {
+    border-radius: 1rem;
+    align-self: center;
+    height: 70%;
+    width: 97%;
+
+  }
+
+  .allbrands {
     flex-wrap: wrap;
   }
 
@@ -943,13 +1033,26 @@ nav {
     font-size: small;
   }
 
+  .datetags p {
+    padding: 0.2rem;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    font-size: small;
+  }
+
+  .latestblog {
+    display: flex;
+    justify-content: unset;
+  }
+
   .most-viewed-items-container {
     flex-wrap: wrap;
 
   }
 
   .most-viewed-item {
-    margin: 1rem;
+    margin: 0.6rem 2rem;
   }
 
   .mainhighlight a {
@@ -969,21 +1072,71 @@ nav {
 
   }
 
-  .datetags p {
+  .footer-section {
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0.2rem;
-    margin: 0;
-    color: white;
-    font-weight: 500;
+  }
+
+  .footer-items {
+    padding: 2px;
+  }
+
+  .footer-items h3 {
+    font-size: 14px;
+  }
+
+  .footer-section li {
     font-size: small;
   }
 
-  .latestblog {
+  .footer-section p {
+    font-size: medium;
+  }
+
+  .newsletter {
+    padding: 0.2rem;
+    font-size: medium;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width:700px) {
+  .logo img {
+    width: 12rem;
+  }
+
+  .latest h2 {
+    font-size: large;
+  }
+
+  .datetags p {
+    padding: 0.2vw;
+    font-size: x-small;
+  }
+
+  .cartItems-mobile {
     display: flex;
-    justify-content: unset;
-  }
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0.5rem auto;
+    width: 60%;
+    }
+    .cardlink a{
+      font-size: small;
+    }
+}
 
-  .views {
-    top: 57vw;
-  }
+@media screen and (max-width:500px) {
 
+  .cartItems-mobile {
+    width: 80%;
+  }
+  .catOptions li {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 11px;
+  }
 }

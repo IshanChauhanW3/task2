@@ -12,6 +12,18 @@
     />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body>
     <header>
@@ -19,7 +31,7 @@
         <a id="dropdown-menubar" class="menubar-dropdown m-0 p-0" href=""
           ><i class="fa fa-bars"></i
         ></a>
-        <div id="menubar" class="menubar">
+        <div id="menubar" class="menubar active">
           <div>
             <ul class="m-0 p-0">
               <li class="show">
@@ -351,7 +363,7 @@
               <li>SPECIALS</li>
             </ul>
           </div>
-          <div class="cartItems">
+          <div class="cartItems cartItems-mobile">
             <div class="cartItem">
               <div class="pimgcontainer">
                 <img class="pimage" src="./assets/images/headphones.png" />
@@ -599,12 +611,13 @@
             <div class="latestcards">
               <div class="latestcards-img">
                 <img src="./assets/images/latestcards/lc1.png" />
+                <div class="views">
+                  <p><img src="./assets/images/latestcards/p1.png" />admin</p>
+                  <p><img src="./assets/images/latestcards/cmts.png" />47</p>
+                  <p><img src="./assets/images/latestcards/views.png" />6264</p>
+                </div>
               </div>
-              <div class="views">
-                <p><img src="./assets/images/latestcards/p1.png" />admin</p>
-                <p><img src="./assets/images/latestcards/cmts.png" />47</p>
-                <p><img src="./assets/images/latestcards/views.png" />6264</p>
-              </div>
+
               <div class="datetags">
                 <p class="datepart">02</p>
                 <p>Aug</p>
@@ -739,7 +752,7 @@
       <div class="wrapper darkgreybg">
         <div class="most-viewed darkgreybg">
           <h2>Most Viewed</h2>
-          <hr />
+          <hr class="rule" />
           <div class="most-viewed-items-container">
             <div class="most-viewed-item">
               <div class="most-viewed-img">
@@ -801,6 +814,82 @@
         </div>
       </div>
     </section>
+    <section>
+      <div class="wrapper">
+        <div class="social">
+          <a hreaf=""><i class="fa fa-facebook-square"></i></a>
+          <a hreaf=""><i class="fa fa-instagram"></i></a>
+          <a hreaf=""><i class="fa fa-skype"></i></a>
+          <a hreaf=""><i class="fa fa-twitter"></i></a>
+          <a hreaf=""><i class="fa fa-address-card-o"></i></a>
+          <a hreaf=""><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="footer-section">
+          <div class="footer-items">
+            <h3>About Us</h3>
+            <hr />
+            <ul>
+              <a href=""> <li>About Us</li></a>
+              <a href=""> <li>Delivery</li> </a>
+              <a href=""> <li>Privacy Policy</li></a>
+              <a href=""> <li>Terms and Conditions</li></a>
+              <a href=""> <li>Custom Links</li></a>
+            </ul>
+          </div>
+          <div class="footer-items">
+            <h3>Customer Service</h3>
+            <hr />
+            <ul>
+              <a href=""> <li>Contact</li></a>
+              <a href=""> <li>Returns</li> </a>
+              <a href=""> <li>Site Map</li></a>
+              <a href=""> <li>Drands</li></a>
+              <a href=""> <li>Unlimited Links</li></a>
+            </ul>
+          </div>
+          <div class="footer-items">
+            <h3>My Account</h3>
+            <hr />
+            <ul>
+              <a href=""> <li>My Account</li></a>
+              <a href=""> <li>Order History</li> </a>
+              <a href=""> <li>Affiliates</li></a>
+              <a href=""> <li>Newsletter</li></a>
+              <a href=""> <li>Gift Certificates</li></a>
+            </ul>
+          </div>
+          <div class="footer-items newsletter">
+            <h3>Newsletter</h3>
+            <hr />
+            <p>
+              Stay up to date with news and promotions by signing up for our
+              newsletter.
+            </p>
+            <div class="search">
+              <div class="search-child">
+                <input
+                  class=""
+                  type="text"
+                  id=""
+                  name=""
+                  value=""
+                  placeholder="Your email"
+                />
+                <a class="m-0 p-0"><i class="fa fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="terms-conditions">
+              <input class="" type="checkbox" id="" name="" value="" />
+              <p>I have read all terms and conditions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./assets/javascript/app.js"></script>
   </body>
 </html>

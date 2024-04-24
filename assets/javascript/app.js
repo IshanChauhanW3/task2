@@ -22,3 +22,54 @@ document.getElementById("nav-dropdown").onclick=function(e){
   var navbaroptionsMobile=document.getElementById("navbaroptions-mobile")
   navbaroptionsMobile.classList.toggle("navbaroptions-mobile")
 }
+$(document).ready(function () {
+  $('.cartItems-mobile').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    swipe: true,
+    autoplaySpeed: 1000,
+    responsive:[
+      {
+        breakpoint: 1060,
+        settings:{
+          slidesToShow:2,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings:{
+          slidesToShow:1,
+        }
+      },
+    ]
+  });
+});
+$(document).ready(function () {
+  $('.catCards').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    swipe: true,
+    autoplaySpeed: 1000,
+    responsive:[
+      {
+        breakpoint: 1060,
+        settings:{
+          slidesToShow:2,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings:{
+          slidesToShow:1,
+        }
+      },
+      
+    ]
+  });
+});
