@@ -26,6 +26,8 @@ $(document).ready(function () {
   $('.cartItems-mobile').slick({
     dots: true,
     infinite: true,
+    arrows:false,
+    border:true,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -52,6 +54,7 @@ $(document).ready(function () {
     dots: true,
     infinite: true,
     slidesToShow: 4,
+    arrows:false,
     slidesToScroll: 1,
     autoplay: true,
     swipe: true,
@@ -66,7 +69,34 @@ $(document).ready(function () {
       {
         breakpoint: 550,
         settings:{
-          slidesToShow:1,
+          slidesToShow:2,
+        }
+      },
+      
+    ]
+  });
+});
+$(document).ready(function () {
+  $('.allbrands').slick({
+    dots: true,
+    infinite: true,
+    arrows:false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    swipe: true,
+    autoplaySpeed: 1000,
+    responsive:[
+      {
+        breakpoint: 1060,
+        settings:{
+          slidesToShow:4,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings:{
+          slidesToShow:2,
         }
       },
       

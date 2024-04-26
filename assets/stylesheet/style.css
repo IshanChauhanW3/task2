@@ -6,6 +6,9 @@
   --dark-grey: rgb(64, 76, 84);
   --balanced-grey: rgb(107, 107, 107);
   --medium-grey: rgb(77, 76, 76);
+  --border-radius: 1rem;
+  --standard-padding: 1.5rem;
+  --standard-margin:0.7rem;
 }
 
 body {
@@ -15,6 +18,7 @@ body {
   padding-top: 1rem;
   margin: 0px;
 }
+
 .hide {
   display: none;
 }
@@ -69,7 +73,7 @@ input {
 
 .greybg {
 
-  background-color: var(--grey-shade-bg);
+  background-color: var(--lightgrey);
 }
 
 .darkgreybg {
@@ -81,6 +85,9 @@ section {
   margin: 0;
 }
 
+.header{
+  padding: var(--standard-padding);
+}
 .menubar {
   display: flex;
   justify-content: space-between;
@@ -98,7 +105,7 @@ section {
 
 .navbar {
 
-  margin: 2rem 0;
+  margin: var(--standard-margin) 0;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -107,7 +114,7 @@ section {
 
 .logo img {
   padding-top: 1rem;
-  width: 16rem;
+  width: 15rem;
   height: auto;
 }
 
@@ -123,7 +130,7 @@ section {
 
 .search-child input {
   font-size: 1rem;
-  width: 16rem;
+  width: 15rem;
   height: auto;
 }
 
@@ -148,7 +155,7 @@ section {
 }
 
 .options div {
-  padding: 0 5px;
+  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,13 +176,13 @@ section {
 }
 
 .cart {
-  padding-top: 0.7rem;
+  padding-top: 0.5rem;
 }
 
 .cartIcon {
   display: inline-block;
-  padding: 0.2rem;
-  margin: 0.2rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
   background-color: var(--blue-background);
 
 }
@@ -223,34 +230,37 @@ nav {
 .navoptions li a {
   vertical-align: middle;
   font-size: 1rem;
-  padding: 0.4rem;
+  padding: 0.5rem;
   color: white;
 }
 
 .navoptions li a:hover {
   font-size: 1rem;
-  padding: 1rem 0.4rem;
+  padding: 1rem 0.5rem;
   background-color: yellow;
   color: black;
 
 }
 
 .highlight {
-  margin: 1.5% 0;
+  padding: var(--standard-padding);
   display: flex;
-
+  column-gap: var(--standard-padding);
+  justify-content: space-around;
 }
 
 .mainhighlight {
+
   position: relative;
-  display: flex;
-  padding: 4px;
+  width: 70%;
+  border-radius: var(--border-radius);
 }
 
 .mainhighlight img {
-  border-radius: 1rem;
   height: 100%;
   width: 100%;
+  border-radius: var(--border-radius);
+
 }
 
 .mainhighlight a {
@@ -260,28 +270,24 @@ nav {
   background: transparent;
   border: 0.2rem solid var(--balanced-grey);
   font-size: 1rem;
-  border-radius: 0.5rem;
   color: var(--dark-grey);
   display: inline;
 }
 
 .subhighlight {
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4px;
+  width: 30%;
+  row-gap: var(--standard-padding);
 }
 
 .carimg1 {
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
   height: 100%;
   width: 100%;
-}
 
-.carimg2 {
-  border-radius: 1rem;
-  height: 100%;
-  width: 100%;
 }
 
 .features-mobile {
@@ -296,32 +302,32 @@ nav {
 .fset {
   display: flex;
   justify-content: space-between;
-  padding: 0.6rem;
+  padding: 0.8rem;
 }
 
 .flogo {
-  margin: 0.3rem;
+  margin: 0.5rem;
 }
 
 .flogo img {
   border: 2px solid var(--blue-background);
   height: 2.5rem;
   width: 2.5rem;
-  padding: 0.6rem;
+  padding: 0.5rem;
   border-radius: 100%;
 
 }
 
 .mainf {
   color: white;
-  font-size: 1rem;
+  font-size: medium;
   font-weight: 450;
 
 }
 
 .subf {
   color: var(--grey-shade-bg);
-  font-size: 0.7rem;
+  font-size: small;
 }
 
 .categories h1 {
@@ -330,8 +336,9 @@ nav {
   font-size: 2rem;
   text-align: center;
 }
-.categories{
-  padding: 0.5rem;
+
+.categories {
+  padding: var(--standard-padding)
 }
 
 .rule {
@@ -359,7 +366,7 @@ nav {
 }
 
 .catOptions li {
-  padding: 0.8rem;
+  padding: 1rem;
   background-color: var(--lightgrey);
   font-weight: 500;
   font-size: 1rem;
@@ -372,24 +379,18 @@ nav {
 }
 
 .catCards {
-
   display: flex;
-  justify-content: center;
-  margin: 1rem;
-
 }
 
 .cardimg-tag {
-  padding: 0.4rem;
   position: relative;
-}
+  margin: var(--standard-margin);}
 
 .catCards img {
 
   height: 100%;
   width: 100%;
-  border-radius: 8px;
-
+  border-radius: var(--border-radius)
 }
 
 .cardlink {
@@ -398,9 +399,9 @@ nav {
   position: absolute;
   text-align: center;
   top: 80%;
-  left: 25%;
+  left: 20%;
   background-color: white;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   width: 55%;
   font-size: 1rem;
 
@@ -418,26 +419,23 @@ nav {
 .cartItems {
   display: flex;
   position: relative;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0.5rem 0;
+  justify-content: space-between;
 
 }
 
 .cartItem {
   display: flex;
   position: relative;
-
-  margin: 0.4rem;
   flex-direction: column;
   border: 2px solid var(--lightgrey);
+  margin:var(--standard-margin);
 
 }
 
 .pimage {
 
-  height: 20rem;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 
 .pname {
@@ -449,7 +447,7 @@ nav {
 
 .pname p {
   font-size: 1rem;
-  padding: 0.4rem;
+  padding: 0.5rem;
   margin: 0;
 }
 
@@ -457,9 +455,8 @@ nav {
   display: flex;
   background-color: var(--lightgrey);
   justify-content: space-between;
-  font-size: 0.9rem;
-  padding: 0.4rem;
-  margin: 0;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
 
 .buy img {
@@ -483,16 +480,16 @@ nav {
 }
 
 .price h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 460;
-  padding: 0.4rem;
+  padding: 0.5rem;
 
 }
 
 .price h5 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 300;
-  padding: 0.4rem;
+  padding: 0.5rem;
 }
 
 .pothers {
@@ -504,25 +501,26 @@ nav {
 }
 
 .pothers button {
-  background-color: var(--blue-shade-button);
+  background-color: var(--blue-background);
   color: white;
   font-size: 0.8rem;
-  padding: 0.4rem;
+  font-weight: 600;
+  padding: 0.5rem;
   border: none;
 
 }
 
 .pothers input {
-  height: 1.2rem;
+  height: 1.5rem;
   width: 3rem;
 }
 
 .discounttag {
 
-  font-size: 0.9rem;
+  font-size: small;
   font-weight: 600;
-  border-radius: 5px;
-  padding: 0.4rem;
+  border-radius: var(--border-radius);
+  padding: 6px;
   color: white;
   position: absolute;
   top: 1%;
@@ -534,7 +532,7 @@ nav {
 .allproducts {
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 1rem 0.8rem;
 }
 
 .allproducts a {
@@ -549,15 +547,21 @@ nav {
 
 .allbrands {
   display: flex;
-  margin: 1rem 0.4rem;
-  justify-content: space-between;
+  margin: 1rem 0;
+  justify-content: center;
+
+}
+
+.brandname {
+  margin:var(--standard-margin); 
 }
 
 .allbrands img {
-  height: 80%;
-  width: 99%;
+  height: 130px;
+  width: 100%;
+  object-fit: cover;
   border: 2px solid var(--lightgrey);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
 }
 
 .gallery {
@@ -577,47 +581,47 @@ nav {
 
 .gallery img {
 
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   border: none;
 }
 
 .gallitems {
-  justify-content: space-between;
+  justify-content: space-around;
 
 }
 
 .latest {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: var(--standard-padding)
+  ;
 
 }
 
 .latestcards {
   background-color: white;
   display: flex;
-  justify-content: center;
   position: relative;
+  justify-content: center;
   flex-direction: column;
 
 }
 
-.latestcards-img {
-  border-radius: 1rem;
-  align-self: center;
-  height: 70%;
-  width: 97%;
-
+.latestcardsimg {
+  position: relative;
 }
 
 .latestcards img {
-  border-radius: 1rem;
-  height: 96%;
+
+  height: 400px;
   width: 100%;
+  object-fit: cover;
 
 }
 
 .latestcards h2 {
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: x-large;
   text-align: center;
 }
 
@@ -630,13 +634,14 @@ nav {
 }
 
 .latestcards a {
-  font-size: 0.6rem;
+  font-size: small;
   font-weight: 300;
   text-align: center;
 
 }
 
 .datetags {
+  padding: 5px 0;
   position: absolute;
   background-color: var(--blue-shade-button);
   top: 2%;
@@ -646,11 +651,11 @@ nav {
 }
 
 .datetags p {
-  padding: 0.2vw;
+  padding: 5px;
   margin: 0;
   color: white;
   font-weight: 600;
-  font-size: x-small;
+  font-size: small;
 }
 
 .views {
@@ -658,7 +663,7 @@ nav {
   background-color: aliceblue;
   justify-content: center;
   position: absolute;
-  top: 45%;
+  bottom: 8%;
   left: 0%;
   width: 100%;
   opacity: 0.9;
@@ -712,11 +717,11 @@ nav {
 }
 
 .most-viewed {
-  margin-top: 1rem;
+  padding: var(--standard-padding);
 }
 
 .most-viewed h2 {
-  padding: 1rem;
+
   margin: 0;
   color: white;
   text-align: center;
@@ -724,72 +729,85 @@ nav {
 
 .most-viewed h3 {
   padding: 0;
-  margin: 1rem;
+  margin: 0;
+  font-weight: 500;
+
 }
 
 .most-viewed p {
   padding: 0;
-  margin: 1rem;
+  padding-left: 2px;
+  
 }
 
 .most-viewed-items-container {
-
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 2rem;
+  justify-content: center;
+  gap: var(--standard-padding);
+  padding-top: var(--standard-padding);
 }
 
 .most-viewed-item {
   background-color: white;
   display: flex;
-  justify-content: space-between;
-  border-radius: 5px;
-
-}
+  width: 25%;
+  border: 2px solid red;
+  
+  }
 
 .most-viewed-img {
   margin: auto;
+  width: 30%;
+
+}
+
+.most-viewed-item-details {
+  width: 70%;
+  padding: 0.8rem;
+
+}
+
+.most-viewed-item-details a {
+  margin: 0;
+  padding-left: 2px;
 }
 
 .most-viewed-item img {
 
-  height: 70%;
-  width: 95%;
-}
-
-.most-viewed-item-details {
-  width: 80%;
+  height: 100%;
+  width: 100%;
 
 }
 
 .footer-section {
   display: flex;
+  padding: var(--standard-padding);
   justify-content: space-between;
 }
 
 .footer-items {
-  margin-top: 1rem;
+  padding: var(--standard-padding);
   display: flex;
   flex-direction: column;
-  width: 25%;
-  border-left: 2px solid var(--lightgrey);
-  padding: 1rem;
+  border-left: 1px solid var(--lightgrey);
+  width:25%;
 }
 
 .footer-items h3 {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   font-weight: 500;
 }
 
 .footer-items li {
+  font-size: 1rem;
   display: block;
   color: var(--blue-background)
 }
 
 .footer-items hr {
   border-color: red;
-  width: 50%;
+  width: 20%;
   margin-left: 2px
 }
 
@@ -800,7 +818,7 @@ nav {
 .social {
   display: flex;
   justify-content: center;
-  background-color: var(--lightgrey);
+  padding:0.5rem;
 }
 
 .social a {
@@ -826,7 +844,16 @@ nav {
 
   .wrapper {
     max-width: 1024px;
+    margin: auto;
 
+  }
+
+  header {
+    background-color: var(--lightgrey);
+  }
+
+  .logo img {
+    width: 10rem;
   }
 
   .menubar {
@@ -835,9 +862,13 @@ nav {
   }
 
   .menubar-dropdown {
-    padding: 0.6rem;
+    padding: 0.5rem;
     display: block;
     background-color: var(--lightgrey);
+  }
+
+  .menubar-dropdown i {
+    margin-left: 0.8rem;
   }
 
   .options {
@@ -847,9 +878,15 @@ nav {
   .show {
 
     display: block;
-    text-align: center;
+    padding: 5px 0;
     border-bottom: 0.5px solid var(--lightgrey);
 
+  }
+
+  .show i {
+    margin-left: 0.8rem;
+    width: 25px;
+    color: black;
   }
 
   .search {
@@ -858,6 +895,10 @@ nav {
 
   .cart {
     display: none;
+  }
+
+  .navbar {
+    margin: 0;
   }
 
   .search-mobile {
@@ -873,10 +914,14 @@ nav {
   .navbar-dropdown {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
 
-  .navbar-dropdown div {
+  .nav-dropdown i {
+    margin-left: 0.8rem;
+  }
+
+  .nav-dropdown div {
     display: flex;
     color: var(--medium-grey);
     flex-direction: column;
@@ -929,7 +974,7 @@ nav {
   }
 
   .search-child-mobile input {
-    width: 79%;
+    width: 100%;
     margin: 0rem;
     padding: 0.3rem;
     border: none;
@@ -937,20 +982,26 @@ nav {
   }
 
   .highlight {
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    row-gap: var(--standard-padding);
+  }
+
+  .mainhighlight {
+    width: 100%;
+
   }
 
   .subhighlight {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    margin: 0;
+    column-gap: var(--standard-padding);
   }
 
-  .subhighlight img {
-    height: 90%;
-    padding: 0;
-    margin: 0;
-
+  .subhighlight div {
+    width: 50%;
   }
 
   .features {
@@ -962,7 +1013,7 @@ nav {
     justify-content: center;
 
   }
-
+  
   .features-section {
     display: flex;
     flex-direction: column;
@@ -1004,19 +1055,14 @@ nav {
     flex-wrap: wrap;
   }
 
-  .views {
-    top: 20rem;
-
-  }
-
   .latestcards {
-    height: 70%;
-    width: 60%;
-    margin: 1rem;
+    height: 100%;
+    width: 100%;
+    margin: 0.8rem;
   }
 
   .latestcards-img {
-    border-radius: 1rem;
+    border-radius: var(--border-radius);
     align-self: center;
     height: 70%;
     width: 97%;
@@ -1035,12 +1081,16 @@ nav {
     font-size: small;
   }
 
+  .datetags {
+    padding: 5px 0;
+  }
+
   .datetags p {
-    padding: 0.2rem;
+    padding: 2px;
     margin: 0;
     color: white;
     font-weight: 500;
-    font-size: small;
+    font-size: 14px;
   }
 
   .latestblog {
@@ -1052,11 +1102,13 @@ nav {
     flex-wrap: wrap;
 
   }
-
   .most-viewed-item {
-    margin: 0.6rem 2rem;
+    background-color: white;
+    display: flex;
+    width: 50%;   
+    
   }
-
+  
   .mainhighlight a {
     position: absolute;
     top: 64.2%;
@@ -1064,7 +1116,7 @@ nav {
     background: transparent;
     border: 0.1rem solid var(--balanced-grey);
     font-size: 0.45rem;
-    border-radius: 0.2rem;
+    border-radius: var(--border-radius);
     color: var(--dark-grey);
     display: inline;
     padding: 0.3rem;
@@ -1077,23 +1129,13 @@ nav {
   .footer-section {
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0.2rem;
+    
   }
 
   .footer-items {
-    padding: 2px;
-  }
+    width:50%;
+    border: none;
 
-  .footer-items h3 {
-    font-size: 14px;
-  }
-
-  .footer-section li {
-    font-size: small;
-  }
-
-  .footer-section p {
-    font-size: medium;
   }
 
   .newsletter {
@@ -1105,17 +1147,18 @@ nav {
 }
 
 @media screen and (max-width:700px) {
-  .logo img {
-    width: 12rem;
-  }
 
   .latest h2 {
     font-size: large;
   }
 
+  .datetags {
+    padding: 2px;
+  }
+
   .datetags p {
-    padding: 0.2vw;
-    font-size: x-small;
+    padding: 4px;
+    font-size: 12px;
   }
 
   .cartItems-mobile {
@@ -1124,18 +1167,38 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     margin: 0.5rem auto;
-    width: 60%;
-    }
-    .cardlink a{
-      font-size: small;
-    }
+    width: 70%;
+  }
+
+  .cardlink {
+    padding: 2px;
+    margin: 0;
+
+  }
+
+  .cardlink a {
+    font-size: small;
+    font-weight: 600;
+  }
+
+  .allproducts a {
+    font-size: x-small;
+  }
+  .most-viewed-item {
+    background-color: white;
+    display: flex;
+    width: 96%;
+    
+  }
+  
 }
 
 @media screen and (max-width:500px) {
 
   .cartItems-mobile {
-    width: 80%;
+    width: 100%;
   }
+
   .catOptions li {
     font-size: 11px;
     font-weight: 500;
