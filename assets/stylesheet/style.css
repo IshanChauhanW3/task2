@@ -1139,9 +1139,15 @@ nav {
   }
 
   .newsletter {
-    padding: 0.2rem;
+    padding: var(--standard-padding);
     font-size: medium;
     width: 100%;
+  }
+  .newsletter input{
+    margin:2px;
+  }
+  .newsletter p{
+    padding: 0.3rem;
   }
 
 }
