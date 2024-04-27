@@ -99,7 +99,34 @@ $(document).ready(function () {
           slidesToShow:2,
         }
       },
-      
+          
+    ]
+  });
+});
+$(document).ready(function () {
+  $('.mainhighlight').slick({
+    dots: false,
+    infinite: true,
+    arrows:false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    swipe: true,
+    autoplaySpeed: 1000,
+    responsive:[
+      {
+        breakpoint: 1060,
+        settings:{
+          slidesToShow:1,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings:{
+          slidesToShow:1,
+        }
+      },
+          
     ]
   });
 });

@@ -244,21 +244,26 @@ nav {
 
 .highlight {
   padding: var(--standard-padding);
-  display: flex;
+  display: flex;  
   column-gap: var(--standard-padding);
   justify-content: space-around;
 }
 
 .mainhighlight {
 
-  position: relative;
-  width: 70%;
+  width: 70%; 
   border-radius: var(--border-radius);
+  display: flex;
+ 
+}
+.mainhighlight div {
+  position: relative;
 }
 
 .mainhighlight img {
-  height: 100%;
+  height: 460px;
   width: 100%;
+  
   border-radius: var(--border-radius);
 
 }
@@ -283,10 +288,14 @@ nav {
   row-gap: var(--standard-padding);
 }
 
+.subhighlight div{
+  width: 100%;  
+}
 .carimg1 {
   border-radius: var(--border-radius);
-  height: 100%;
+  height:215px;
   width: 100%;
+  object-fit:cover;
 
 }
 
@@ -1147,7 +1156,7 @@ nav {
     margin:2px;
   }
   .newsletter p{
-    padding: 0.3rem;
+    padding: 0.3  rem;
   }
 
 }
