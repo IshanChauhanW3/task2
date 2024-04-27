@@ -271,10 +271,11 @@ nav {
 .mainhighlight a {
   position: absolute;
   top: 65.2%;
-  left: 25%;
-  background: transparent;
+  left: 2%;
+  background: white;
   border: 0.2rem solid var(--balanced-grey);
   font-size: 1rem;
+  font-weight: 500;
   color: var(--dark-grey);
   display: inline;
 }
@@ -1120,15 +1121,14 @@ nav {
   
   .mainhighlight a {
     position: absolute;
-    top: 64.2%;
-    left: 20%;
+    top: 67%;
+    left: 3%;
     background: transparent;
     border: 0.1rem solid var(--balanced-grey);
-    font-size: 0.45rem;
-    border-radius: var(--border-radius);
+    font-size: small;    
     color: var(--dark-grey);
     display: inline;
-    padding: 0.3rem;
+    padding: 0.5rem;
     background-color: var(--blue-shade-button);
     color: white;
     font-weight: 500;
