@@ -513,9 +513,19 @@ nav {
 .pothers {
   margin: 1rem 0;
   display: flex;
-  justify-content: space-around;
-  width: 98%;
-
+  justify-content: space-between;
+  
+  width:93%;
+  padding: 0 0.5rem ;
+ 
+}
+.addcartbutton{
+  
+  padding:0.4rem 0
+}
+.pothers a{
+  padding: 0;
+  display: block;
 }
 
 .pothers button {
@@ -531,6 +541,7 @@ nav {
 .pothers input {
   height: 1.5rem;
   width: 3rem;
+  vertical-align: bottom;
 }
 
 .discounttag {
@@ -1119,7 +1130,7 @@ nav {
     margin: 0.5rem auto;
     width: 80%;
   }
-
+  
   .latest {
     justify-content: center;
     flex-wrap: wrap;
@@ -1233,6 +1244,19 @@ nav {
     justify-content: space-around;
     margin: 0.5rem auto;
     width: 70%;
+  }
+  
+  .addcartbutton{
+    padding: 0.4rem 0;
+  }
+  .pothers button {    
+    font-size:0.7rem;
+  }
+  .pothers input {
+
+    height: 1.3rem;
+    width: 2rem;
+    
   }
 
   .cardlink {
