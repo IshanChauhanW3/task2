@@ -1103,7 +1103,7 @@ nav {
 
   .catOptions li {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 1rem;
   }
 
@@ -1242,14 +1242,20 @@ nav {
   }
 
   .cardlink a {
-    font-size: small;
+    font-size: 0.7rem;
     font-weight: 600;
   }
 
   .allproducts a {
     font-size: x-small;
   }
-
+  .features-mobile{
+    padding: 0 var(--standard-padding) ;
+    justify-content: space-between;
+  }
+  .fset{
+    padding:0.5rem 0;
+  }
   .most-viewed-item {
     background-color: white;
     display: flex;
@@ -1281,8 +1287,34 @@ nav {
   }
 
   .catOptions li {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width:380px){
+  .catOptions li{
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 11px;
   }
+
+  .features-mobile{
+    padding: 0 var(--standard-padding) ;
+  }
+  .fset{
+    padding:0.2rem;
+  }
+  .mainf{
+    font-size: 13px;
+  }
+  .subf{
+    font-size: 10px;
+  }
+  .flogo img{
+    height:1.5rem;
+    width: 1.5rem;
+  }
+
 }
