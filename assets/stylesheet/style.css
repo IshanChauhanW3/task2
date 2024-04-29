@@ -276,14 +276,19 @@ nav {
 
 .mainhighlight a {
   position: absolute;
-  top: 61%;
+  top: 62.5%;
   left: 3%;
   background: white;
-  border: 0.2rem solid var(--balanced-grey);
+  border: none;
   font-size: 1rem;
   font-weight: 500;
   color: var(--dark-grey);
   display: inline;
+}
+
+.mainhighlight a:hover {
+  background: var(--blue-background);
+  color: white;
 }
 
 .subhighlight {
@@ -548,7 +553,7 @@ nav {
 
 .allFashion h2 {
   color: var(--medium-grey);
-  
+
   font-size: 1.5rem;
   font-weight: 500;
 
@@ -557,7 +562,7 @@ nav {
 .allFashion {
   display: flex;
   padding: var(--standard-padding);
-  
+
 }
 
 .smallFashionCat {
@@ -569,31 +574,32 @@ nav {
 .largeFashionCat {
   padding: var(--standard-padding);
   width: 80%;
-  height:100%;
+  height: 100%;
   background-color: white;
 }
 
-.fashionImg{
+.fashionImg {
   display: flex;
   flex-direction: column;
 }
+
 .fashionImg img {
-  padding-top:var(--standard-margin) ;
+  padding-top: var(--standard-margin);
   width: 100%;
-  height:100%;
-  align-self: center; 
+  height: 100%;
+  align-self: center;
 }
 
 .seeAll li {
   display: block;
-  
+
 }
 
 .seeAll a {
-  display: block;  
+  display: block;
   padding: 0;
   padding-top: var(--standard-margin);
-  
+
 }
 
 .largeFashionCat img {
@@ -608,13 +614,13 @@ nav {
 }
 
 .rule1 {
-  margin-left:0px;
+  margin-left: 0px;
   width: 5rem;
   border: 2px solid rgb(226, 100, 55);
 }
 
 .rule2 {
-  margin-left:0px;
+  margin-left: 0px;
   width: 5rem;
   border: 0.5px solid rgb(226, 100, 55);
 }
@@ -1290,15 +1296,16 @@ nav {
   .newsletter p {
     padding: 0.3 rem;
   }
-  .smallFashionCat {    
+
+  .smallFashionCat {
     width: 30%;
     background-color: var(--lightgrey);
   }
-  
-  .largeFashionCat {    
+
+  .largeFashionCat {
     width: 70%;
-    }
-  
+  }
+
 }
 
 @media screen and (max-width:700px) {
@@ -1310,6 +1317,12 @@ nav {
   .mainhighlight a {
     font-size: x-small;
     border-radius: 5px;
+    border: none;
+  }
+
+  .mainhighlight a:hover {
+    background-color: yellow;
+    color: black;
   }
 
   .datetags {
@@ -1378,75 +1391,78 @@ nav {
     width: 96%;
 
   }
-  .allFashion{
+
+  .allFashion {
     flex-direction: column;
     justify-content: center;
-    
+
   }
 
-  .smallFashionCat{
-    width:100%;
+  .smallFashionCat {
+    width: 100%;
     padding: var(--standard-padding) 0;
     background-color: var(--grey-shade-bg);
   }
-  .largeFashionCat{
-    width:100%;
+
+  .largeFashionCat {
+    width: 100%;
     padding: 0;
     background-color: var(--grey-shade-bg);
   }
-  .price{
+
+  .price {
     background-color: white;
   }
 
 }
 
-  @media screen and (max-width:500px) {
+@media screen and (max-width:500px) {
 
-    .cartItems-mobile {
-      width: 100%;
-    }
-
-    .mainhighlight a {
-      font-size: 0.4rem;
-      font-weight: 800;
-      border-radius: 0;
-      padding: 0.3rem;
-
-    }
-
-    .dot {
-      height: 14px;
-      width: 15px;
-      font-size: x-small;
-      font-weight: 900;
-
-    }
-
-    .catOptions li {
-      font-size: 13px;
-      font-weight: 600;
-      padding: 12px;
-    }
+  .cartItems-mobile {
+    width: 100%;
   }
 
-  @media screen and (max-width:380px) {
-    .catOptions li {
-      font-size: 11px;
-      font-weight: 600;
-      padding: 11px;
-    }
-
-    .features-mobile {
-      padding: var(--standard-padding);
-    }
-
-    .fset {
-      padding: 0.2rem;
-    }
-
-    .flogo img {
-      height: 1.5rem;
-      width: 1.5rem;
-    }
+  .mainhighlight a {
+    font-size: 0.4rem;
+    font-weight: 800;
+    border-radius: 0;
+    padding: 0.3rem;
 
   }
+
+  .dot {
+    height: 14px;
+    width: 15px;
+    font-size: x-small;
+    font-weight: 900;
+
+  }
+
+  .catOptions li {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .catOptions li {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 11px;
+  }
+
+  .features-mobile {
+    padding: var(--standard-padding);
+  }
+
+  .fset {
+    padding: 0.2rem;
+  }
+
+  .flogo img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+}
