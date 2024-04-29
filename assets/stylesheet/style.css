@@ -75,6 +75,9 @@ input {
 
   background-color: var(--lightgrey);
 }
+.lightgreybg{
+  background-color: var(--grey-shade-bg);
+}
 
 .darkgreybg {
   background-color: var(--dark-grey);
