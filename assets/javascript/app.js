@@ -129,4 +129,12 @@ $(document).ready(function () {
           
     ]
   });
+
+$('.prevBtn').click(function () {
+  $('.mainhighlight').slick('slickPrev');
+});
+
+$('.nextBtn').click(function () {
+  $('.mainhighlight').slick('slickNext');
+});
 });

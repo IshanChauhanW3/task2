@@ -259,7 +259,7 @@ nav {
 
 }
 
-.mainhighlight div {
+.mainhighlight-container {
   position: relative;
 }
 
@@ -272,7 +272,7 @@ nav {
 
 .mainhighlight a {
   position: absolute;
-  top: 65.2%;
+  top: 61%;
   left: 3%;
   background: white;
   border: 0.2rem solid var(--balanced-grey);
@@ -1018,6 +1018,22 @@ nav {
 
   }
 
+  .mainhighlight a {
+    position: absolute;
+    top: 65%;
+    left: 3%;
+    background: transparent;
+    border: 0.1rem solid var(--balanced-grey);
+    font-size: small;
+    color: var(--dark-grey);
+    display: inline;
+    padding: 0.5rem;
+    background-color: var(--blue-background);
+    color: white;
+    font-weight: 500;
+
+  }
+
   .subhighlight {
     width: 100%;
     display: flex;
@@ -1028,6 +1044,31 @@ nav {
 
   .subhighlight div {
     width: 50%;
+  }
+
+  .slidebuttons {
+
+    align-self: center;
+    position: absolute;
+    top: 85%;
+    left: 3%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-grey);
+    display: inline;
+
+  }
+
+  .dot {
+    height: 20px;
+    width: 20px;
+    padding-top: 1px;
+    background-color:black;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    display: inline-block;
+
   }
 
   .features {
@@ -1135,22 +1176,6 @@ nav {
 
   }
 
-  .mainhighlight a {
-    position: absolute;
-    top: 67%;
-    left: 3%;
-    background: transparent;
-    border: 0.1rem solid var(--balanced-grey);
-    font-size: small;
-    color: var(--dark-grey);
-    display: inline;
-    padding: 0.5rem;
-    background-color: var(--blue-shade-button);
-    color: white;
-    font-weight: 500;
-
-  }
-
   .footer-section {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1185,6 +1210,10 @@ nav {
     font-size: large;
   }
 
+  .mainhighlight a{
+    font-size: x-small;
+    border-radius:5px;
+  }
   .datetags {
     padding: 2px;
   }
@@ -1234,8 +1263,18 @@ nav {
   }
 
   .mainhighlight a {
-    font-size: xx-small;
-
+    font-size: 0.4rem;
+    font-weight: 800;
+    border-radius: 0;
+    padding: 0.3rem;
+    
+  }
+  .dot {
+    height: 14px;
+    width: 15px;
+    font-size: x-small; 
+    font-weight: 900;   
+    
   }
 
   .catOptions li {
