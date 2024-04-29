@@ -1078,10 +1078,10 @@ nav {
     display: none;
   }
 
-  .features-mobile {
+  .features-mobile{
     display: flex;
-    justify-content: center;
-
+    padding: var(--standard-padding) ;
+    justify-content: space-between;
   }
 
   .features-section {
@@ -1249,10 +1249,7 @@ nav {
   .allproducts a {
     font-size: x-small;
   }
-  .features-mobile{
-    padding: 0 var(--standard-padding) ;
-    justify-content: space-between;
-  }
+ 
   .fset{
     padding:0.5rem 0;
   }
@@ -1301,7 +1298,7 @@ nav {
   }
 
   .features-mobile{
-    padding: 0 var(--standard-padding) ;
+    padding: var(--standard-padding) ;
   }
   .fset{
     padding:0.2rem;
