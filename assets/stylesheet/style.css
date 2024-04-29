@@ -8,7 +8,7 @@
   --medium-grey: rgb(77, 76, 76);
   --border-radius: 1rem;
   --standard-padding: 1.5rem;
-  --standard-margin:0.7rem;
+  --standard-margin: 0.7rem;
 }
 
 body {
@@ -85,9 +85,10 @@ section {
   margin: 0;
 }
 
-.header{
+.header {
   padding: var(--standard-padding);
 }
+
 .menubar {
   display: flex;
   justify-content: space-between;
@@ -244,7 +245,7 @@ nav {
 
 .highlight {
   padding: var(--standard-padding);
-  display: flex;  
+  display: flex;
   column-gap: var(--standard-padding);
   justify-content: space-around;
   border-radius: var(--border-radius);
@@ -252,18 +253,19 @@ nav {
 
 .mainhighlight {
 
-  width: 70%; 
+  width: 70%;
   border-radius: var(--border-radius);
   display: flex;
- 
+
 }
+
 .mainhighlight div {
   position: relative;
 }
 
 .mainhighlight img {
   height: 100%;
-  width: 100%;  
+  width: 100%;
   border-radius: var(--border-radius);
 
 }
@@ -284,19 +286,21 @@ nav {
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: var(--standard-padding);
   width: 30%;
   row-gap: var(--standard-padding);
+
 }
 
-.subhighlight div{
-  width: 100%;  
+.subhighlight div {
+  width: 85%;
+
 }
+
 .carimg1 {
   border-radius: var(--border-radius);
-  height:100%;
+  height: 100%;
   width: 100%;
-  object-fit:cover;
 
 }
 
@@ -394,7 +398,8 @@ nav {
 
 .cardimg-tag {
   position: relative;
-  margin: var(--standard-margin);}
+  margin: var(--standard-margin);
+}
 
 .catCards img {
 
@@ -438,7 +443,7 @@ nav {
   position: relative;
   flex-direction: column;
   border: 2px solid var(--lightgrey);
-  margin:var(--standard-margin);
+  margin: var(--standard-margin);
 
 }
 
@@ -563,7 +568,7 @@ nav {
 }
 
 .brandname {
-  margin:var(--standard-margin); 
+  margin: var(--standard-margin);
 }
 
 .allbrands img {
@@ -603,8 +608,7 @@ nav {
 .latest {
   display: flex;
   justify-content: center;
-  gap: var(--standard-padding)
-  ;
+  gap: var(--standard-padding);
 
 }
 
@@ -747,7 +751,7 @@ nav {
 .most-viewed p {
   padding: 0;
   padding-left: 2px;
-  
+
 }
 
 .most-viewed-items-container {
@@ -762,8 +766,8 @@ nav {
   display: flex;
   width: 25%;
   border: 2px solid red;
-  
-  }
+
+}
 
 .most-viewed-img {
   margin: auto;
@@ -800,7 +804,7 @@ nav {
   display: flex;
   flex-direction: column;
   border-left: 1px solid var(--lightgrey);
-  width:25%;
+  width: 25%;
 }
 
 .footer-items h3 {
@@ -828,7 +832,7 @@ nav {
 .social {
   display: flex;
   justify-content: center;
-  padding:0.5rem;
+  padding: 0.5rem;
 }
 
 .social a {
@@ -926,12 +930,14 @@ nav {
     justify-content: space-around;
     padding: 1rem;
   }
+
   .navbar-dropdown div {
-    color:var(--balanced-grey);
+    color: var(--balanced-grey);
     display: flex;
     flex-direction: column;
   }
-  .navbar-dropdown lable{
+
+  .navbar-dropdown lable {
     font-size: small;
   }
 
@@ -1003,15 +1009,15 @@ nav {
     flex-direction: column;
     justify-content: center;
     row-gap: var(--standard-padding);
-    border-radius: var(--border-radius);  
-    
+    border-radius: var(--border-radius);
+
   }
 
   .mainhighlight {
     width: 100%;
 
   }
-  
+
   .subhighlight {
     width: 100%;
     display: flex;
@@ -1033,7 +1039,7 @@ nav {
     justify-content: center;
 
   }
-  
+
   .features-section {
     display: flex;
     flex-direction: column;
@@ -1078,7 +1084,6 @@ nav {
   .latestcards {
     height: 100%;
     width: 100%;
-    margin: 0.8rem;
   }
 
   .latestcards-img {
@@ -1122,20 +1127,21 @@ nav {
     flex-wrap: wrap;
 
   }
+
   .most-viewed-item {
     background-color: white;
     display: flex;
-    width: 50%;   
-    
+    width: 50%;
+
   }
-  
+
   .mainhighlight a {
     position: absolute;
     top: 67%;
     left: 3%;
     background: transparent;
     border: 0.1rem solid var(--balanced-grey);
-    font-size: small;    
+    font-size: small;
     color: var(--dark-grey);
     display: inline;
     padding: 0.5rem;
@@ -1148,11 +1154,11 @@ nav {
   .footer-section {
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
   }
 
   .footer-items {
-    width:50%;
+    width: 50%;
     border: none;
 
   }
@@ -1162,11 +1168,13 @@ nav {
     font-size: medium;
     width: 100%;
   }
-  .newsletter input{
-    margin:2px;
+
+  .newsletter input {
+    margin: 2px;
   }
-  .newsletter p{
-    padding: 0.3  rem;
+
+  .newsletter p {
+    padding: 0.3 rem;
   }
 
 }
@@ -1209,13 +1217,14 @@ nav {
   .allproducts a {
     font-size: x-small;
   }
+
   .most-viewed-item {
     background-color: white;
     display: flex;
     width: 96%;
-    
+
   }
-  
+
 }
 
 @media screen and (max-width:500px) {
@@ -1223,10 +1232,12 @@ nav {
   .cartItems-mobile {
     width: 100%;
   }
+
   .mainhighlight a {
     font-size: xx-small;
- 
-   }
+
+  }
+
   .catOptions li {
     font-size: 11px;
     font-weight: 500;
