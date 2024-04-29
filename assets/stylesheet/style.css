@@ -1090,11 +1090,11 @@ nav {
   }
 
   .mainf {
-    font-size: small;
+    font-size: medium;
   }
 
   .subf {
-    font-size: x-small;
+    font-size: small;
   }
 
   .categories h1 {
@@ -1253,6 +1253,14 @@ nav {
   .fset{
     padding:0.5rem 0;
   }
+  .mainf {
+    font-size: small;
+  }
+
+  .subf {
+    font-size: x-small;
+  }
+
   .most-viewed-item {
     background-color: white;
     display: flex;
@@ -1303,12 +1311,7 @@ nav {
   .fset{
     padding:0.2rem;
   }
-  .mainf{
-    font-size: 13px;
-  }
-  .subf{
-    font-size: 10px;
-  }
+  
   .flogo img{
     height:1.5rem;
     width: 1.5rem;
