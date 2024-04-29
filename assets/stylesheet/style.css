@@ -75,7 +75,8 @@ input {
 
   background-color: var(--lightgrey);
 }
-.lightgreybg{
+
+.lightgreybg {
   background-color: var(--grey-shade-bg);
 }
 
@@ -514,16 +515,17 @@ nav {
   margin: 1rem 0;
   display: flex;
   justify-content: space-between;
-  
-  width:93%;
-  padding: 0 0.5rem ;
- 
+  width: 93%;
+  padding: 0 0.5rem;
+
 }
-.addcartbutton{
-  
-  padding:0.4rem 0
+
+.addcartbutton {
+
+  padding: 0.4rem 0
 }
-.pothers a{
+
+.pothers a {
   padding: 0;
   display: block;
 }
@@ -544,6 +546,79 @@ nav {
   vertical-align: bottom;
 }
 
+.allFashion h2 {
+  color: var(--medium-grey);
+  
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+
+.allFashion {
+  display: flex;
+  padding: var(--standard-padding);
+  
+}
+
+.smallFashionCat {
+  width: 20%;
+  background-color: var(--lightgrey);
+  padding: var(--standard-padding);
+}
+
+.largeFashionCat {
+  padding: var(--standard-padding);
+  width: 80%;
+  height:100%;
+  background-color: white;
+}
+
+.fashionImg{
+  display: flex;
+  flex-direction: column;
+}
+.fashionImg img {
+  padding-top:var(--standard-margin) ;
+  width: 100%;
+  height:100%;
+  align-self: center; 
+}
+
+.seeAll li {
+  display: block;
+  
+}
+
+.seeAll a {
+  display: block;  
+  padding: 0;
+  padding-top: var(--standard-margin);
+  
+}
+
+.largeFashionCat img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.wholeCat {
+  color: var(--blue-background);
+}
+
+.rule1 {
+  margin-left:0px;
+  width: 5rem;
+  border: 2px solid rgb(226, 100, 55);
+}
+
+.rule2 {
+  margin-left:0px;
+  width: 5rem;
+  border: 0.5px solid rgb(226, 100, 55);
+}
+
 .discounttag {
 
   font-size: small;
@@ -553,7 +628,7 @@ nav {
   color: white;
   position: absolute;
   top: 1%;
-  left: 83%;
+  left: 82%;
   border: none;
   background-color: red;
 }
@@ -1077,7 +1152,7 @@ nav {
     height: 20px;
     width: 20px;
     padding-top: 1px;
-    background-color:black;
+    background-color: black;
     color: white;
     border-radius: 100%;
     text-align: center;
@@ -1089,9 +1164,9 @@ nav {
     display: none;
   }
 
-  .features-mobile{
+  .features-mobile {
     display: flex;
-    padding: var(--standard-padding) ;
+    padding: var(--standard-padding);
     justify-content: space-between;
   }
 
@@ -1130,7 +1205,7 @@ nav {
     margin: 0.5rem auto;
     width: 80%;
   }
-  
+
   .latest {
     justify-content: center;
     flex-wrap: wrap;
@@ -1215,7 +1290,15 @@ nav {
   .newsletter p {
     padding: 0.3 rem;
   }
-
+  .smallFashionCat {    
+    width: 30%;
+    background-color: var(--lightgrey);
+  }
+  
+  .largeFashionCat {    
+    width: 70%;
+    }
+  
 }
 
 @media screen and (max-width:700px) {
@@ -1224,10 +1307,11 @@ nav {
     font-size: large;
   }
 
-  .mainhighlight a{
+  .mainhighlight a {
     font-size: x-small;
-    border-radius:5px;
+    border-radius: 5px;
   }
+
   .datetags {
     padding: 2px;
   }
@@ -1245,18 +1329,20 @@ nav {
     margin: 0.5rem auto;
     width: 70%;
   }
-  
-  .addcartbutton{
+
+  .addcartbutton {
     padding: 0.4rem 0;
   }
-  .pothers button {    
-    font-size:0.7rem;
+
+  .pothers button {
+    font-size: 0.7rem;
   }
+
   .pothers input {
 
     height: 1.4rem;
     width: 2rem;
-    
+
   }
 
   .cardlink {
@@ -1273,10 +1359,11 @@ nav {
   .allproducts a {
     font-size: x-small;
   }
- 
-  .fset{
-    padding:0.5rem 0;
+
+  .fset {
+    padding: 0.5rem 0;
   }
+
   .mainf {
     font-size: small;
   }
@@ -1291,54 +1378,75 @@ nav {
     width: 96%;
 
   }
-
-}
-
-@media screen and (max-width:500px) {
-
-  .cartItems-mobile {
-    width: 100%;
-  }
-
-  .mainhighlight a {
-    font-size: 0.4rem;
-    font-weight: 800;
-    border-radius: 0;
-    padding: 0.3rem;
-    
-  }
-  .dot {
-    height: 14px;
-    width: 15px;
-    font-size: x-small; 
-    font-weight: 900;   
+  .allFashion{
+    flex-direction: column;
+    justify-content: center;
     
   }
 
-  .catOptions li {
-    font-size: 13px;
-    font-weight: 600;
-    padding: 12px;
+  .smallFashionCat{
+    width:100%;
+    padding: var(--standard-padding) 0;
+    background-color: var(--grey-shade-bg);
   }
-}
-
-@media screen and (max-width:380px){
-  .catOptions li{
-    font-size: 11px;
-    font-weight: 600;
-    padding: 11px;
+  .largeFashionCat{
+    width:100%;
+    padding: 0;
+    background-color: var(--grey-shade-bg);
   }
-
-  .features-mobile{
-    padding: var(--standard-padding) ;
-  }
-  .fset{
-    padding:0.2rem;
-  }
-  
-  .flogo img{
-    height:1.5rem;
-    width: 1.5rem;
+  .price{
+    background-color: white;
   }
 
 }
+
+  @media screen and (max-width:500px) {
+
+    .cartItems-mobile {
+      width: 100%;
+    }
+
+    .mainhighlight a {
+      font-size: 0.4rem;
+      font-weight: 800;
+      border-radius: 0;
+      padding: 0.3rem;
+
+    }
+
+    .dot {
+      height: 14px;
+      width: 15px;
+      font-size: x-small;
+      font-weight: 900;
+
+    }
+
+    .catOptions li {
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px;
+    }
+  }
+
+  @media screen and (max-width:380px) {
+    .catOptions li {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 11px;
+    }
+
+    .features-mobile {
+      padding: var(--standard-padding);
+    }
+
+    .fset {
+      padding: 0.2rem;
+    }
+
+    .flogo img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+  }
