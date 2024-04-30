@@ -276,7 +276,7 @@ nav {
 
 .mainhighlight a {
   position: absolute;
-  top: 62.5%;
+  top: 65.2%;
   left: 3%;
   background: white;
   border: none;
@@ -1154,18 +1154,6 @@ nav {
 
   }
 
-  .dot {
-    height: 20px;
-    width: 20px;
-    padding-top: 1px;
-    background-color: black;
-    color: white;
-    border-radius: 100%;
-    text-align: center;
-    display: inline-block;
-
-  }
-
   .features {
     display: none;
   }
@@ -1409,6 +1397,9 @@ nav {
     padding: 0;
     background-color: var(--grey-shade-bg);
   }
+  .footer-items{
+    padding: 0.5rem;
+  }
 
   .price {
     background-color: white;
@@ -1427,14 +1418,6 @@ nav {
     font-weight: 800;
     border-radius: 0;
     padding: 0.3rem;
-
-  }
-
-  .dot {
-    height: 14px;
-    width: 15px;
-    font-size: x-small;
-    font-weight: 900;
 
   }
 

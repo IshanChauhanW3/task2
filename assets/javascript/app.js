@@ -105,7 +105,7 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $('.mainhighlight').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     arrows:false,
     slidesToShow: 1,
