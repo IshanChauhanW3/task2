@@ -1103,7 +1103,6 @@ nav {
   .highlight {
     flex-direction: column;
     justify-content: center;
-    row-gap: var(--standard-padding);
     border-radius: var(--border-radius);
 
   }
