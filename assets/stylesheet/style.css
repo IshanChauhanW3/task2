@@ -69,6 +69,7 @@ img {
 
 input {
   display: inline-block;
+  border-radius: unset;
 }
 
 .greybg {
@@ -1396,7 +1397,8 @@ nav {
     padding: 0;
     background-color: var(--grey-shade-bg);
   }
-  .footer-items{
+
+  .footer-items {
     padding: 0.5rem;
   }
 
